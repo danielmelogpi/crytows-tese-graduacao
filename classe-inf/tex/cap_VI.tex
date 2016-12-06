@@ -1,7 +1,17 @@
 \chapter{Experimento}
 \label{cap:experimento}
 Para verificar a viabilidade da proposta de serviços criptográficos funcionando a partir de um dispositivo móvel, foi desenvolvido neste trabalho de conclusão um aplicativo que contém algumas funcionalidades demonstrativas de tais serviços e uma aplicação cliente para verificação do seu funcionamento de forma simplificada.
+
 A aplicação desenvolvida faz uso dos serviços de uma outra aplicação Android chamada Open KeyChain. Ela é em uma carteira de chaves PGP com uma interface simples para o usuário final. 
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.3\textwidth]{./fig/openkeychain.png}
+ \caption{Captura de tela da aplicação OpenKey Chain, com duas chaves privadas de exemplo}
+ \label{fig:exemploFig2}
+\end{figure}
+
 
 O protocolo de comunicação e troca de mensagens segue a especificação apresentada anteriormente. As operações foram implementadas em um aplicativo Android de modo a demonstrar de forma minimizada a viabilidade da proposta.
 
@@ -11,12 +21,38 @@ O protocolo de comunicação e troca de mensagens segue a especificação apresentad
 
 Os serviços PGP foram implementados a partir de um aplicativo Android seguindo as especificações da proposta no capítulo anterior. Ao iniciar o aplicativo exibe seu IP e porta para os serviços, que devem ser configurados em aplicações clientes para a correta invocação dos serviços.
 
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.4\textwidth]{./fig/app-pgp.png}
+ \caption{Captura de tela da aplicação desenvolvida neste experimento.}
+ \label{fig:exemploFig2}
+\end{figure}
+
+
 Para sua implementação foram usadas os seguintes itens de configuração detalhados no anexo 6. O dispositivo móvel usado no desenvolvimento e testes está detalhado no anexo 5. Os detalhes do ambiente de desenvolvimento utilizado em todos os casos está no anexo 7. O anexo 8 contém um exemplo de aplicação cliente capaz de consumir os serviços fornecidos a partir do dispositivo móvel.
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.98\textwidth]{./fig/camadas.png}
+ \caption{Ilustração em alto nível das camadas envolvidas na implementação dos webservices em dispositivo móvel}
+ \label{fig:exemploFig2}
+\end{figure}
+
 
 A arquitetura adotada pode ser representada pelo seguinte diagrama, as principais entidades da aplicação:
 
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.95\textwidth]{./fig/arquitetura.png}
+ \caption{Principais entidades que compõem a aplicação desenvolvida no experimento}
+ \label{fig:exemploFig2}
+\end{figure}
 
-Legenda: Principais camadas na implementação dos webservices em dispositivo móvel
+
+
+Legenda: 
 
 São destacados nesta implementação:
 \begin{itemize}
@@ -29,29 +65,47 @@ São destacados nesta implementação:
 \end{itemize}
 
 
-
-
 \section{Demonstração do consumo dos serviços}
 \label{sec:experimentoDemoConsumo}
 
 
 Abaixo seguem algumas capturas de tela da ferramenta Postman em sua versão 4.9.0 [REF34], demonstrando como o consumo dos webservices pode ser feito. Note-se que esta ferramenta somente faz consultas à APIs e mostra o resultado das suas chamadas. Esta demonstração busca expor a versatilidade dos webservices desenvolvidos, uma vez que qualquer aplicação capaz de chamadas REST poderia fazer uso desses recursos.
 
-Legenda: requisição de criptografia de conteúdo usando o webservice criptográfico
-
-Legenda: consultando resultado de um pedido de criptografia
-
-
-
-Legenda: executando pedido de descriptografia de conteúdo
-
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/postman-encrypt-content.png}
+ \caption{Requisição de criptografia de conteúdo usando o webservice criptográfico}
+ \label{fig:exemploFig2}
+\end{figure}
 
 
-Legenda: Executando consulta ao resultado de um pedido de descriptografia
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/postman-encript-content-result.png}
+ \caption{Consultando resultado de um pedido de criptografia com o requestId}
+ \label{fig:exemploFig2}
+\end{figure}
 
 
-\section{Demonstração do consumo dos serviços}
-\label{sec:experimentoDemoConsumo}
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/postman-decrypt-content.png}
+ \caption{Executando pedido de descriptografia de conteúdo}
+ \label{fig:exemploFig2}
+\end{figure}
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/postman-decrypt-result.png}
+ \caption{Executando pedido de descriptografia de conteúdo}
+ \label{fig:exemploFig2}
+\end{figure}
+
+
+\section{Análise de desempenho da solução}
+\label{sec:experimentoDesempenho}
+
 
 
 \section{Análise de vulnerabilidades da solução}

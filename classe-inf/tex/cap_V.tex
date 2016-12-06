@@ -20,13 +20,30 @@ O escopo deste trabalho está em demonstrar a viabilidade do uso de um chaveiro c
 
 Abaixo uma representação simplificada da proposta, exibindo os principais elementos envolvidos numa operação de criptografia:
 
-Legenda: representação de uma operação de criptografia com chaveiro em dispositivo móvel
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/diagrama-tunel.png}
+ \caption{representação de uma operação de criptografia com chaveiro em dispositivo móvel}
+ \label{fig:exemploFig2}
+\end{figure}
+
 Quando necessário, será pedida na tela do usuário a senha de sua chave privada para realizar operações de assinatura e descriptografia. 
 
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/diagrama-senha.png}
+ \caption{ilustração de como a chamada de um serviço criptográfico aciona o Open KeyChain que, por sua vez, pede a senha do chaveiro do usuário para proceder}
+ \label{fig:exemploFig2}
+\end{figure}
 
-Legenda: ilustração de como a chamada de um serviço criptográfico aciona o Open KeyChain que, por sua vez, pede a senha do chaveiro do usuário para proceder.
 
-Legenda: Requisição de criptografia de uma mensagem à ser enviada para alice@email.com
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.4\textwidth]{./fig/pedir-senha-alice}
+ \caption{Captura de tela da aplicação Open KeyChain pedindo a senha da chave privada para o usuário alice@email.com}
+ \label{fig:exemploFig2}
+\end{figure}
 
 \section{Operações dos Webservices}
 \label{sec:operacoesWebservices} 
@@ -55,7 +72,13 @@ Todas as requisições devem contar com o cabeçalho Authorization preenchido com u
 
 Esta operação demanda um conteúdo textual para ser encriptado e o e-mail do destinatário. A chave pública do destinatário deve estar importada na instalação do Open KeyChain no dispositivo móvel.
 
-Legenda: Funcionamento de uma requisição de encriptação com assinatura
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/diagrama-encrypt.png}
+ \caption{Funcionamento de uma requisição de encriptação com assinatura}
+ \label{fig:exemploFig2}
+\end{figure}
 
 \begin{itemize}
 \item \textbf{Endpoint}: \texttt{/cryptows/encrypt-content}
@@ -64,19 +87,6 @@ Legenda: Funcionamento de uma requisição de encriptação com assinatura
 \end{itemize}
 
 Para criptografar um novo conteúdo deve ser enviado um objeto JSON com os seguintes atributos:
-
-\begin{table}[]
-\centering
-\caption{Atributos da mensagem JSON de pedido de criptografia de conteúdo}
-\label{my-label}
-\begin{tabular}{lllll}
- & Chave 				& Tipo do conteúdo 				& Descrição &  \\
- &  &  &  &  \\
- &  &  &  &  \\
- &  &  &  & 
-\end{tabular}
-\end{table}
-
 
 
 \begin{itemize}
@@ -127,9 +137,13 @@ Exemplo:
 
 Esta operação somente exige o identificador do do pedido anterior de criptografia, chamado na resposta daquele pedido de requestId. Esse identificador deve ser informado na URL de consulta.
 
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/diagrama-encrypt-consultar.png}
+ \caption{Diagrama com o fluxo de consulta do resultado de uma operação de criptografia}
+ \label{fig:exemploFig2}
+\end{figure}
 
-
-Legenda: diagrama com o fluxo de consulta do resultado de uma operação de criptografia
 
 \begin{itemize}
 \item \textbf{Endpoint}: \texttt{/cryptows/encrypt-content/requestId/123e4567-e89b-12d3-a456-426655}
@@ -142,7 +156,7 @@ A resposta deste serviço em caso de sucesso fará uso do código HTTP 200 - OK ind
 O formato dessa resposta conterá os seguintes dados, em formato JSON:
 
 \begin{itemize}
-\item \textbf{cipherContent} (String) - Mensagem criptografada com a chave pública do usuário informado em ?receiver?, no ato da requisição de criptografia
+\item \textbf{cipherContent} (String) - Mensagem criptografada com a chave pública do usuário informado em \verb|receiver|, no ato da requisição de criptografia
 \item \textbf{code} (Número inteiro) - Código HTTP referente ao sucesso ou falha da operação
 \item \textbf{statusMessage} (String) - Mensagem auxiliar do resultado da operação. Pode conter detalhes em caso de erros durante o processamento.
 \end{itemize}
@@ -182,6 +196,13 @@ Exemplo em caso de processamento concluído:
 \label{sec:servicoDescriptografa}
 
 Esta operação demanda uma mensagem em formato OpenPGP em ASCII Armour para uma tentativa de desencriptação. O formato ASCII Armour permite que a mensagem possa ser enviada com formato JSON sem mais processamento, visto que JSON não suporta dados binário. Essa operação somente é possível se o Open KeyChain contém a chave privada equivalente à chave pública utilizada para criptografia. O conteúdo não necessariamente precisa ter sido encriptado usando o webservice apresentado no item 6.1.1, uma vez que o padrão OpenPGP não leva isso em conta.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/diagrama-decrypt.png}
+ \caption{Funcionamento de uma requisição de encriptação com assinatura}
+ \label{fig:exemploFig2}
+\end{figure}
 
 
 \begin{itemize}
@@ -241,7 +262,12 @@ Exemplo:
 Esta operação somente exige o identificador do do pedido anterior de criptografia, chamado na resposta daquele pedido de requestId. Esse identificador deve ser informado na URL de consulta.
 
 
-
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/diagrama-decrypt-consultar.png}
+ \caption{Diagrama com o fluxo de consulta do resultado de uma operação de criptografia}
+ \label{fig:exemploFig2}
+\end{figure}
 
 
 

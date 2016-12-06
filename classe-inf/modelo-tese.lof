@@ -3,20 +3,30 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Exemplo de opera\c c\~ao de criptografia sendo realizada por linha de comando\relax }}{21}{figure.caption.7}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Captura de tela a aplica\c c\~ao Enigmail, exibindo detalhes do recurso de descriptografia\relax }}{22}{figure.caption.8}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagrama com a proposta de funcionando do enigmail com o m\'odulo openpgp para Apache HTTP\relax }}{23}{figure.caption.9}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Exemplos de diversos tipos de token, como aqueles em formato de pendrive, cart\~ao criptogr\'afico e token desconectado, gerador de c\'odigo secreto com e sem entrada de senha pessoal\relax }}{24}{figure.caption.11}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Representa\c c\~ao da forma de acesso aos tokens conectados\relax }}{24}{figure.caption.12}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces representa\c c\~ao de uma opera\c c\~ao de criptografia com chaveiro em dispositivo m\'ovel\relax }}{27}{figure.caption.16}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces ilustra\c c\~ao de como a chamada de um servi\c co criptogr\'afico aciona o Open KeyChain que, por sua vez, pede a senha do chaveiro do usu\'ario para proceder\relax }}{28}{figure.caption.17}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Captura de tela da aplica\c c\~ao Open KeyChain pedindo a senha da chave privada para o usu\'ario alice@email.com\relax }}{28}{figure.caption.18}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Funcionamento de uma requisi\c c\~ao de encripta\c c\~ao com assinatura\relax }}{29}{figure.caption.22}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagrama com o fluxo de consulta do resultado de uma opera\c c\~ao de criptografia\relax }}{31}{figure.caption.26}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Funcionamento de uma requisi\c c\~ao de encripta\c c\~ao com assinatura\relax }}{32}{figure.caption.28}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Diagrama com o fluxo de consulta do resultado de uma opera\c c\~ao de criptografia\relax }}{33}{figure.caption.30}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Captura de tela da aplica\c c\~ao OpenKey Chain, com duas chaves privadas de exemplo\relax }}{35}{figure.caption.32}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Captura de tela da aplica\c c\~ao desenvolvida neste experimento.\relax }}{36}{figure.caption.34}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Ilustra\c c\~ao em alto n\IeC {\'\i }vel das camadas envolvidas na implementa\c c\~ao dos webservices em dispositivo m\'ovel\relax }}{37}{figure.caption.35}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Principais entidades que comp\~oem a aplica\c c\~ao desenvolvida no experimento\relax }}{37}{figure.caption.36}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Requisi\c c\~ao de criptografia de conte\'udo usando o webservice criptogr\'afico\relax }}{38}{figure.caption.38}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Consultando resultado de um pedido de criptografia com o requestId\relax }}{39}{figure.caption.39}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Executando pedido de descriptografia de conte\'udo\relax }}{39}{figure.caption.40}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Executando pedido de descriptografia de conte\'udo\relax }}{40}{figure.caption.41}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Uma figura t\IeC {\'\i }pica.\relax }}{33}{figure.caption.24}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Esta figura \'e um exemplo de um r\'otulo de figura que ocupa mais de uma linha, devendo ser identado e justificado.\relax }}{33}{figure.caption.25}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Figura inclu\IeC {\'\i }da no texto com a classe graphicx.\relax }}{34}{figure.caption.26}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces {\ref {sub@subfig:ex1}} e {\ref {sub@subfig:ex2}} representam dois exemplos do uso de subfiguras dentro de uma \'unica figura.\relax }}{34}{figure.caption.28}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Segunda subfigura (um peda\c co).}}}{34}{figure.caption.28}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Uma figura t\IeC {\'\i }pica.\relax }}{42}{figure.caption.52}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Esta figura \'e um exemplo de um r\'otulo de figura que ocupa mais de uma linha, devendo ser identado e justificado.\relax }}{42}{figure.caption.53}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Figura inclu\IeC {\'\i }da no texto com a classe graphicx.\relax }}{43}{figure.caption.54}
-\contentsline {figure}{\numberline {8.4}{\ignorespaces {\ref {sub@subfig:ex1}} e {\ref {sub@subfig:ex2}} representam dois exemplos do uso de subfiguras dentro de uma \'unica figura.\relax }}{43}{figure.caption.56}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Segunda subfigura (um peda\c co).}}}{43}{figure.caption.56}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

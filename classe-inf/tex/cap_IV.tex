@@ -30,6 +30,13 @@ No comando acima, os detalhes da operação são os seguintes:
 \item \verb|--recipient|: usuário que receberá a mensagem. A sua chave pública deve ser conhecida no chaveiro.
 \end{itemize}
 
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/prompt-encrypt-document.png}
+ \caption{Exemplo de operação de criptografia sendo realizada por linha de comando}
+ \label{fig:exemploFig2}
+\end{figure}
+
 
 Essa forma de acesso pode ser explorada por qualquer aplicação que resida na máquina onde o GnuPG está instalado. Além da chamada pelo binário gpg, demonstrada anteriormente, o gpg instalado em estações de trabalho contém uma biblioteca padrão chamada GPGME, que oferece exposição de recursos da aplicação de forma padronizado para linguagens diversas. Em aplicações que fazem uso do chaveiro instalado localmente essas chamadas são abstraídas por diversas bibliotecas, de acordo com a linguagem desejada. A página de ferramentas do GnuPG trás alguns exemplos dessas bibliotecas [REF21]. Alguns exemplos são:
 
@@ -46,7 +53,23 @@ Algumas ferramentas conhecidas que fazem uso de bibliotecas como essas são o Eni
 
 O Enigmail é um plugin desenvolvido para o cliente de e-mail Mozilla Thunderbird. Este plugin estende as capacidades do Thunderbird dando-lhe a capacidade de encriptar, desencriptar, assinar e verificar assinatura de e-mails. O Claws Mail é outro cliente de e-mail que também implementa os recursos de segurança usando o chaveiro local para proteger as mensagens.
 
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/tela-enigmail.png}
+ \caption{Captura de tela a aplicação Enigmail, exibindo detalhes do recurso de descriptografia}
+ \label{fig:exemploFig2}
+\end{figure}
+
 O Apache OpenPGP é uma extensão para o servidor HTTP Apache que permite que requisições HTTP sejam assinadas e verificadas pelo servidor. Ela faz par com a extensão Enigform para o Firefox, que modifica as requisições usando a instalação local do chaveiro PGP.
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/enigform.png}
+ \caption{Diagrama com a proposta de funcionando do enigmail com o módulo openpgp para Apache HTTP}
+ \label{fig:exemploFig2}
+\end{figure}
+
 
 \section{Token de Segurança Móvel}
 \label{sec:acessoTokenSeguranca} 
@@ -68,9 +91,16 @@ Alguns dos tipos de tokens móveis são:
 
 Uma das soluções mais conhecidas no Brasil é o e-CPF, para pessoa física, e o e-CNPJ, para pessoas jurídicas. 
 
-%iamgem
 
-Exemplos de diversos tipos de token, como aqueles em formato de pendrive, cartão criptográfico e token desconectado, gerador de código secreto com e sem entrada de senha pessoal
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/tokens.png}
+ \caption{Exemplos de diversos tipos de token, como aqueles em formato de pendrive, cartão criptográfico e token desconectado, gerador de código secreto com e sem entrada de senha pessoal}
+ \label{fig:exemploFig2}
+\end{figure}
+
+
+
 
 
 Avaliando os dispositivos oferecidos pela Serasa, uma das maiores revendedoras do país, nota-se que não existe suporte para outros sistemas operacionais que não o Microsoft Windows a partir da versão XP [REF 29]. O acesso as operações do token é feito a partir do software que o acompanha. Aplicações que desejam usar essa aplicação devem acessar as bibliotecas fornecidas por cada fabricante instaladas no sistema operacional.
@@ -78,6 +108,14 @@ Avaliando os dispositivos oferecidos pela Serasa, uma das maiores revendedoras d
 A Certisign oferece, além desses modelos, uma versão para celular [REF29]. A aplicação está disponível para Windows, MacOS e Android. A criação e validação dos certificados acontece presencialmente e, com alguns códigos de segurança, o certificado pode ser emitido no dispositivo. O acesso à essa instalação no dispositivo móvel também é feito por meio de software da fabricante, de forma similar aos desenvolvidos pela Serasa.
 
 Em ambos os casos apresentados, o acesso pode ser simplificado pelo seguinte diagrama:
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/diagrama-tokens.png}
+ \caption{Representação da forma de acesso aos tokens conectados}
+ \label{fig:exemploFig2}
+\end{figure}
+
 
 Alguns tokens podem ser usados de forma desconectada. Um exemplo no Brasil é utilizado por bancos para autenticar operações por internet banking. Um pequeno dispositivo gera um número aleatório que muda de tempo em tempo. Para realizar operações junto ao banco, o usuário deve fornecer o número que o token mostra naquele momento. Somente se o sistema bancário autenticar a entrada fornecida pelo usuário a operação poderá continuar.
 
