@@ -1,0 +1,92 @@
+\chapter{Analise de formas de acesso à chaveiros criptográficos}
+\label{cap:analiFormasAcesso}
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Várias aplicações fazem uso do chaveiro PGP para melhorar a segurança dos seus recursos e proteger a comunicação entre os usuários. O chaveiro em si precisa ser capaz de fornecer os serviços discutidos anteriormente e, para isso, existem algumas formas utilizadas por aquelas aplicações. Segue uma análise de algumas dessas formas de acesso ao chaveiro PGP e algumas aplicações que empregam tal forma.
+
+\section{Acesso através de linha de comando e bibliotecas}
+\label{sec:acessoLinhaComando} 
+A obra de W. Lucas traz várias das funções de acesso à recursos PGP explicadas com rico detalhe, além de exemplos de uso [REF32]. A aplicação GnuPG é uma das formas mais conhecidas de fazer uso de chaves PGP. 
+
+O GnuPG é uma implementação da do formato OpenPGP, que permite a geração e uso das chaves privadas em interface de linha de comando. Essa é a principal implementação do formato em uso atualmente, e é instalada por padrão em várias distribuições Linux. Também está disponível para Microsoft Windows por meio da suite Gpg4win. Essa implementação é uma ferramenta completa, contando com todas as operações esperadas de um chaveiro criptográfico.
+
+Como exemplo de acesso ao chaveiro por linha de comando, segue como criptografar um arquivo textual com a chave pública de um usuário fictício, cujo e-mail é bob@email.com e a assinatura pelo usuário de e-mail alice@email.com. Bob representa quem receberá a mensagem e Alice será o emitente neste exemplo. O anexo XX traz também um pequeno passo-a-passo de como criar novos pares de chave e como descriptografar a mensagem deste exemplo.
+
+Para que esta chave seja usada para criptografar um conteúdo utilizamos o mesmo comando gpg, agora com a instrução --encrypt, seguido de --local-user indicando a chave do usuário emitente da mensagem e --recipient, que indica o usuário que receberá a mensagem. No exemplo abaixo o usuário Bob encriptará uma mensagem para Alice. O comando completo será:
+
+\verb| gpg 	--encrypt --output mensagem.cifrada.pgp \|
+
+\verb|    --armor --local-user bob@email.com  --recipient \|
+
+\verb|    alice@email.com mensagem.plana.txt|
+
+
+No comando acima, os detalhes da operação são os seguintes:
+\begin{itemize}  
+\item \verb|--encrypt| : instruiu o gpg que se trata de uma operação de encriptação
+\item \verb|--output|: informa o arquivo destino, onde será gravada a mensagem cifrada
+\item \verb|--armor|: opcionalmente usada para que a mensagem cifrada esteja em formato ASCII
+\item \verb|--local-user|: usuário local que está gerando a mensagem
+\item \verb|--recipient|: usuário que receberá a mensagem. A sua chave pública deve ser conhecida no chaveiro.
+\end{itemize}
+
+
+Essa forma de acesso pode ser explorada por qualquer aplicação que resida na máquina onde o GnuPG está instalado. Além da chamada pelo binário gpg, demonstrada anteriormente, o gpg instalado em estações de trabalho contém uma biblioteca padrão chamada GPGME, que oferece exposição de recursos da aplicação de forma padronizado para linguagens diversas. Em aplicações que fazem uso do chaveiro instalado localmente essas chamadas são abstraídas por diversas bibliotecas, de acordo com a linguagem desejada. A página de ferramentas do GnuPG trás alguns exemplos dessas bibliotecas [REF21]. Alguns exemplos são:
+
+\begin{itemize}  
+\item gpgme - A biblioteca padrão fornecida pelo GnuPG, já citada [REF22]
+\item \verb|gpg_encrypt()|  - Função nativa da linguagem PHP [REF23]
+\item py-gnupgp - Módulo para linguagem Python que faz interface com o GnuPG [REF24]
+\item gnupg-for-java - Biblioteca para linguagem Java que expõe os recursos da biblioteca gpgme[REF25]
+\item ruby-gpgme - Biblioteca para linguagem Ruby que expõe os recursos da gpgme [REF26]
+\end{itemize}
+
+
+Algumas ferramentas conhecidas que fazem uso de bibliotecas como essas são o Enigmail, o Apache OpenPGP, o Claws Mail e o WebPG para Firefox. Em todos os casos a instalação oferecida na estação de trabalho é usada para realizar as operações necessárias junto ao chaveiro criptográfico.
+
+O Enigmail é um plugin desenvolvido para o cliente de e-mail Mozilla Thunderbird. Este plugin estende as capacidades do Thunderbird dando-lhe a capacidade de encriptar, desencriptar, assinar e verificar assinatura de e-mails. O Claws Mail é outro cliente de e-mail que também implementa os recursos de segurança usando o chaveiro local para proteger as mensagens.
+
+O Apache OpenPGP é uma extensão para o servidor HTTP Apache que permite que requisições HTTP sejam assinadas e verificadas pelo servidor. Ela faz par com a extensão Enigform para o Firefox, que modifica as requisições usando a instalação local do chaveiro PGP.
+
+\section{Token de Segurança Móvel}
+\label{sec:acessoTokenSeguranca} 
+
+Tokens móveis são dispositivos capazes de oferecer recursos de segurança e ainda manter a capacidade de transporte desses recursos. Eles costumam carregar consigo senhas, dados biométricos ou chaves criptográficas.
+
+Esses dispositivos são um conjunto de um token, com formato similar ao de um cartão de memória ou de um pendrive, e o software que é instalado na estação de trabalho que permite acessá-lo. Os dispositivos levam consigo as chaves privadas e públicas do usuário ou empresa, além de uma cadeia de certificados ligados à  Autoridade Certificadora Raiz da ICP-Brasil [REF28]. Existe a possibilidade de usar esses recursos para criptografar conteúdo, realizar assinaturas digitais e mesmo encriptar conexões HTTPS, estabelecendo identificação entre aplicações remotas de forma confiável e juridicamente aceita.
+
+Alguns dos tipos de tokens móveis são:
+\begin{itemize}
+\item Cartão e leitor de cartão criptográfico, como no e-CPF desenvolvido pela Serasa
+\item Token em formato de pendrive, conectado ao USB da estação de trabalho
+\item Token móvel, instalado em dispositivo móvel, como o MobileID, da Certisign
+\item Token não conectado, que gera um número secreto de tempo em tempo
+\item Token não conectado, que gera um número secreto mediante apresentação de senha pessoal
+\end{itemize}
+
+
+
+Uma das soluções mais conhecidas no Brasil é o e-CPF, para pessoa física, e o e-CNPJ, para pessoas jurídicas. 
+
+%iamgem
+
+Exemplos de diversos tipos de token, como aqueles em formato de pendrive, cartão criptográfico e token desconectado, gerador de código secreto com e sem entrada de senha pessoal
+
+
+Avaliando os dispositivos oferecidos pela Serasa, uma das maiores revendedoras do país, nota-se que não existe suporte para outros sistemas operacionais que não o Microsoft Windows a partir da versão XP [REF 29]. O acesso as operações do token é feito a partir do software que o acompanha. Aplicações que desejam usar essa aplicação devem acessar as bibliotecas fornecidas por cada fabricante instaladas no sistema operacional.
+
+A Certisign oferece, além desses modelos, uma versão para celular [REF29]. A aplicação está disponível para Windows, MacOS e Android. A criação e validação dos certificados acontece presencialmente e, com alguns códigos de segurança, o certificado pode ser emitido no dispositivo. O acesso à essa instalação no dispositivo móvel também é feito por meio de software da fabricante, de forma similar aos desenvolvidos pela Serasa.
+
+Em ambos os casos apresentados, o acesso pode ser simplificado pelo seguinte diagrama:
+
+Alguns tokens podem ser usados de forma desconectada. Um exemplo no Brasil é utilizado por bancos para autenticar operações por internet banking. Um pequeno dispositivo gera um número aleatório que muda de tempo em tempo. Para realizar operações junto ao banco, o usuário deve fornecer o número que o token mostra naquele momento. Somente se o sistema bancário autenticar a entrada fornecida pelo usuário a operação poderá continuar.
+
+Nesse caso não há acesso direto ao token e também não é possível que diferentes aplicações usem seu sistema de segurança, já que a forma de geração do código secreto somente é conhecida pela instituição bancária, no exemplo citado.
+
+
+\section{Considerações}
+\label{sec:acessoChaveiroConsideracoes} 
+
+Em várias das aplicações apresentadas é necessário que o usuário configure repetidamente as diversas estações de trabalho nas quais precisa usar os recursos do chaveiro criptográfico. A gestão das chaves já é, por si só, uma tarefa que lhe exigirá atenção. O uso de tokens móveis torna esta gestão mais simples, trazendo mobilidade ao chaveiro. 
+
+O desenvolvimento de outras aplicações que usem tais chaveiros também dependerá da configuração do ambiente, que se repete em cada estação de trabalho. 

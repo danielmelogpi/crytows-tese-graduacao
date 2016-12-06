@@ -2,11 +2,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Uma figura t\IeC {\'\i }pica.\relax }}{22}{figure.caption.22}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Esta figura \'e um exemplo de um r\'otulo de figura que ocupa mais de uma linha, devendo ser identado e justificado.\relax }}{22}{figure.caption.23}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Figura inclu\IeC {\'\i }da no texto com a classe graphicx.\relax }}{23}{figure.caption.24}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces {\ref {sub@subfig:ex1}} e {\ref {sub@subfig:ex2}} representam dois exemplos do uso de subfiguras dentro de uma \'unica figura.\relax }}{23}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Segunda subfigura (um peda\c co).}}}{23}{figure.caption.26}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Uma figura t\IeC {\'\i }pica.\relax }}{33}{figure.caption.24}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Esta figura \'e um exemplo de um r\'otulo de figura que ocupa mais de uma linha, devendo ser identado e justificado.\relax }}{33}{figure.caption.25}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Figura inclu\IeC {\'\i }da no texto com a classe graphicx.\relax }}{34}{figure.caption.26}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces {\ref {sub@subfig:ex1}} e {\ref {sub@subfig:ex2}} representam dois exemplos do uso de subfiguras dentro de uma \'unica figura.\relax }}{34}{figure.caption.28}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Segunda subfigura (um peda\c co).}}}{34}{figure.caption.28}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Uma figura t\IeC {\'\i }pica.\relax }}{42}{figure.caption.52}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Esta figura \'e um exemplo de um r\'otulo de figura que ocupa mais de uma linha, devendo ser identado e justificado.\relax }}{42}{figure.caption.53}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Figura inclu\IeC {\'\i }da no texto com a classe graphicx.\relax }}{43}{figure.caption.54}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces {\ref {sub@subfig:ex1}} e {\ref {sub@subfig:ex2}} representam dois exemplos do uso de subfiguras dentro de uma \'unica figura.\relax }}{43}{figure.caption.56}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Segunda subfigura (um peda\c co).}}}{43}{figure.caption.56}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

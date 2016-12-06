@@ -1,0 +1,67 @@
+\chapter{Experimento}
+\label{cap:experimento}
+Para verificar a viabilidade da proposta de serviços criptográficos funcionando a partir de um dispositivo móvel, foi desenvolvido neste trabalho de conclusão um aplicativo que contém algumas funcionalidades demonstrativas de tais serviços e uma aplicação cliente para verificação do seu funcionamento de forma simplificada.
+A aplicação desenvolvida faz uso dos serviços de uma outra aplicação Android chamada Open KeyChain. Ela é em uma carteira de chaves PGP com uma interface simples para o usuário final. 
+
+O protocolo de comunicação e troca de mensagens segue a especificação apresentada anteriormente. As operações foram implementadas em um aplicativo Android de modo a demonstrar de forma minimizada a viabilidade da proposta.
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\section{Implementação dos serviços para o chaveiro PGP}
+\label{sec:experimentoImplementacao} 
+
+Os serviços PGP foram implementados a partir de um aplicativo Android seguindo as especificações da proposta no capítulo anterior. Ao iniciar o aplicativo exibe seu IP e porta para os serviços, que devem ser configurados em aplicações clientes para a correta invocação dos serviços.
+
+Para sua implementação foram usadas os seguintes itens de configuração detalhados no anexo 6. O dispositivo móvel usado no desenvolvimento e testes está detalhado no anexo 5. Os detalhes do ambiente de desenvolvimento utilizado em todos os casos está no anexo 7. O anexo 8 contém um exemplo de aplicação cliente capaz de consumir os serviços fornecidos a partir do dispositivo móvel.
+
+A arquitetura adotada pode ser representada pelo seguinte diagrama, as principais entidades da aplicação:
+
+
+Legenda: Principais camadas na implementação dos webservices em dispositivo móvel
+
+São destacados nesta implementação:
+\begin{itemize}
+\item \textbf{Serviço HTTP}: responsável por lidar com novas requisições e despachar respostas de requisições de consulta. Caso o resultado já esteja disponpivel em RequestRepository, este serviço o retorna para a aplicação cliente. Também é responsável por validar a chave de acesso que deve ser informada pelas aplicações clientes para fazer uso do serviço.
+\item \textbf{Serviço OpenPGP}: contém as rotinas de operações criptográficas. Gerencia o que está disponível para o serviço HTTP quando este precisa realizar chamadas de ações criptográficas.
+\item \textbf{EncryptCallback} - Classe que lida com os eventos de criptografia
+\item \textbf{DecryptCallback} - Classe que lida com os eventos de descriptografia
+\item \textbf{Message}: representa toda mensagem de entrada, seja no pedido de uma operação criptográfica, seja na consulta do resultado de seu processamento
+\item \textbf{Response}: representa todas as saídas da aplicação. Contém o resultado da operação requisitada, além de poder transportar o requestID quando gerado e os conteúdos, tanto criptografados quanto em formato plano/original.
+\end{itemize}
+
+
+
+
+\section{Demonstração do consumo dos serviços}
+\label{sec:experimentoDemoConsumo}
+
+
+Abaixo seguem algumas capturas de tela da ferramenta Postman em sua versão 4.9.0 [REF34], demonstrando como o consumo dos webservices pode ser feito. Note-se que esta ferramenta somente faz consultas à APIs e mostra o resultado das suas chamadas. Esta demonstração busca expor a versatilidade dos webservices desenvolvidos, uma vez que qualquer aplicação capaz de chamadas REST poderia fazer uso desses recursos.
+
+Legenda: requisição de criptografia de conteúdo usando o webservice criptográfico
+
+Legenda: consultando resultado de um pedido de criptografia
+
+
+
+Legenda: executando pedido de descriptografia de conteúdo
+
+
+
+Legenda: Executando consulta ao resultado de um pedido de descriptografia
+
+
+\section{Demonstração do consumo dos serviços}
+\label{sec:experimentoDemoConsumo}
+
+
+\section{Análise de vulnerabilidades da solução}
+\label{sec:analiseVunerab}
+A solução se propõe a funcionar em redes potencialmente expostas, como redes domésticas ou mesmo corporativas. Nesses cenários se mostra imperativo o uso de HTTPS na comunicação, para evitar ataques de interceptação das mensagens quando ainda trafegam em forma não protegida. Na falta de implementações que usem HTTPS um roteador comprometido, por exemplo, poderia capturar o conteúdo plano das mensagens, tornando todo o esforço em vão. Poderia ser capturada, por exemplo, a senha de acesso daquela sessão, criando uma condição de acesso indevido, mas impossível de identificar pela aplicação. A versão da implementação explorada no experimento não conta com HTTPS, mas a biblioteca utilizada, o NanoHttpd, possui suporte para introdução de certificados nas requisições, tornando-a segura.
+
+É possível, por exemplo, que aplicações que implementam webservices como especificado em seções anteriores gerem certificados próprios, diferentes em cada dispositivo de instalação. A conexão SSL então poderia ser estabelecida, desde que a aplicação cliente confiasse no certificado utilizado pelo serviço no dispositivo. A forma de manter este certificado seguro em caso de comprometimento do dispositivo é, em si, um desafio importante.
+
+Outro ponto importante é a própria capacidade do usuário em comprometer o chaveiro memorizando as senhas. O Open KeyChain memoriza senhas informadas recentemente. Isso traz praticidade, pois múltiplos pedidos por criptografia seriam atendidos sem incomodar novamente o usuário, mas poderia gerar riscos do serviço. A implementação também não tem como forçar atualmente que o usuário use senhas fortes nos seus chaveiros ou que as compartilhe, o que pode comprometer a segurança desta solução se alguém tiver acesso indevido ao dispositivo.
+
+É preciso também observar que a implementação de proteção contra ataques de negação de serviço (DoS) seria necessária em uma solução final. Como este trabalho preocupa-se em demonstrar a viabilidade da implementação a solução para esse problema não foi buscada.
+
+Um último ponto é a forma mais simples de comprometimento vislumbrada: que o usuário perca o dispositivo e alguém o use para se passar por ele. Nesse ponto é importante notar que o Open KeyChain já oferece a capacidade de exportar as chaves privadas e, com elas, é possível gerar certificados de revogação, que informam à rede de confiança de chaves que aquela chave não é mais confiável. Essa ação, entretanto, não é tão simples e, por não ser obrigatória, pode ser esquecida por um usuário.
