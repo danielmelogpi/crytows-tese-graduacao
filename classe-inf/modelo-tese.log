@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.6)  7 DEC 2016 00:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.6)  7 DEC 2016 01:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -579,16 +579,7 @@ LaTeX Warning: Label `fig:exemploFig2' multiply defined.
 LaTeX Warning: Label `fig:exemploFig2' multiply defined.
 
 
-LaTeX Warning: Label `apend:1' multiply defined.
-
-
 LaTeX Warning: Label `fig:exemploFig2' multiply defined.
-
-
-LaTeX Warning: Label `apend:1' multiply defined.
-
-
-LaTeX Warning: Label `apend:1' multiply defined.
 
 )
 \openout1 = `modelo-tese.aux'.
@@ -684,9 +675,9 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 55.
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1
 
-]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 56.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <17.28> not available
@@ -742,15 +733,20 @@ Package babel Info: Redefining portuges shorthand "|
 [1]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 57.
+
+Underfull \hbox (badness 1052) in paragraph at lines 57--57
+[]\T1/ptm/m/n/12 Trabalho de Con-clu-são apre-sen-tado à Co-or-de-na-ção do
+ []
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 57.
- [1] (./pre/pre_aprovacao.tex
+[1] (./pre/pre_aprovacao.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 5.
+(babel)             in language append on input line 9.
  [2
 
 ]) (./pre/pre_direitos.tex
@@ -778,7 +774,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 3.
+(babel)             in language append on input line 10.
  [5
 
 ])
@@ -813,9 +809,9 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 67.
  (./modelo-tese.toc
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 10.
+(Font)              scaled to size 9.85492pt on input line 8.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 16.
+(Font)              scaled to size 8.99994pt on input line 14.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 30.
  [9
@@ -844,32 +840,7 @@ Package babel Info: Redefining portuges shorthand "|
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 67.
- [12]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 67.
- (./modelo-tese.lot)
-\tf@lot=\write7
-\openout7 = `modelo-tese.lot'.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 67.
- [13
-
-
-]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 67.
- (./modelo-tese.loa)
-\tf@loa=\write8
-\openout8 = `modelo-tese.loa'.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 67.
-
-[14
-
-
-] (./modelo-tese.loc
+ [12] (./modelo-tese.loc
 Overfull \hbox (10.48755pt too wide) in paragraph at lines 3--3
  [][] [][][]\T1/pcr/m/n/12 Resposta do pedido de criptografia em caso de proces
 samento 
@@ -893,14 +864,14 @@ m
  []
 
 )
-\tf@loc=\write9
-\openout9 = `modelo-tese.loc'.
+\tf@loc=\write7
+\openout7 = `modelo-tese.loc'.
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 67.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 67.
- [15
+ [13
 
 
 ] (./tex/cap_I.tex
@@ -917,31 +888,31 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 17.
-[16
+[14
 
 
 ]) (./tex/cap_II.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
- [17]
+ [15]
 Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 15.
-[18
+(babel)             in language append on input line 14.
+[16
 
 ]) (./tex/cap_III.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
- [19]
+ [17]
 Cap\'{\i }tulo 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
 ) (./tex/cap_IV.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
- [20
+ [18
 
 ]
 Cap\'{\i }tulo 4.
@@ -951,12 +922,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 7.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 17.
-[21
+[19
 
 ]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 26.
- <./fig/prompt-encrypt-document.png, id=445, 611.28375pt x 349.305pt>
+ <./fig/prompt-encrypt-document.png, id=420, 611.28375pt x 349.305pt>
 File: ./fig/prompt-encrypt-document.png Graphic file (type png)
 
 <use ./fig/prompt-encrypt-document.png>
@@ -967,7 +938,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 36.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 46.
- [22 <./fig/prompt-encrypt-document.png>] <./fig/tela-enigmail.png, id=459, 609
+ [20 <./fig/prompt-encrypt-document.png>] <./fig/tela-enigmail.png, id=434, 609
 .27625pt x 294.09875pt>
 File: ./fig/tela-enigmail.png Graphic file (type png)
 
@@ -975,7 +946,7 @@ File: ./fig/tela-enigmail.png Graphic file (type png)
 Package pdftex.def Info: ./fig/tela-enigmail.png used on input line 58.
 (pdftex.def)             Requested size: 384.10959pt x 185.41782pt.
 
-<./fig/enigform.png, id=462, 814.04124pt x 396.48125pt>
+<./fig/enigform.png, id=437, 814.04124pt x 396.48125pt>
 File: ./fig/enigform.png Graphic file (type png)
 
 <use ./fig/enigform.png>
@@ -983,11 +954,11 @@ Package pdftex.def Info: ./fig/enigform.png used on input line 68.
 (pdftex.def)             Requested size: 384.10959pt x 187.07823pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 72.
- [23 <./fig/tela-enigmail.png>]
+ [21 <./fig/tela-enigmail.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 74.
 
-<./fig/tokens.png, id=477, 603.25375pt x 317.185pt>
+<./fig/tokens.png, id=450, 603.25375pt x 317.185pt>
 File: ./fig/tokens.png Graphic file (type png)
  <use ./fig/tokens.png>
 Package pdftex.def Info: ./fig/tokens.png used on input line 97.
@@ -995,8 +966,8 @@ Package pdftex.def Info: ./fig/tokens.png used on input line 97.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 101.
 
-[24 <./fig/enigform.png>]
-<./fig/diagrama-tokens.png, id=486, 555.07375pt x 63.23625pt>
+[22 <./fig/enigform.png>]
+<./fig/diagrama-tokens.png, id=459, 555.07375pt x 63.23625pt>
 File: ./fig/diagrama-tokens.png Graphic file (type png)
 
 <use ./fig/diagrama-tokens.png>
@@ -1004,13 +975,13 @@ Package pdftex.def Info: ./fig/diagrama-tokens.png used on input line 110.
 (pdftex.def)             Requested size: 384.10959pt x 43.75945pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 118.
- [25 <./fig/tokens.png> <./fig/diagrama-tokens.png>]
+ [23 <./fig/tokens.png> <./fig/diagrama-tokens.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 121.
 ) (./tex/cap_V.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
- [26]
+ [24]
 Cap\'{\i }tulo 5.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
@@ -1018,16 +989,16 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 5.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 16.
-[27
+[25
 
-] <./fig/diagrama-tunel.png, id=503, 903.375pt x 473.77pt>
+] <./fig/diagrama-tunel.png, id=478, 903.375pt x 473.77pt>
 File: ./fig/diagrama-tunel.png Graphic file (type png)
 
 <use ./fig/diagrama-tunel.png>
 Package pdftex.def Info: ./fig/diagrama-tunel.png used on input line 26.
 (pdftex.def)             Requested size: 384.10959pt x 201.44717pt.
 
-<./fig/diagrama-senha.png, id=504, 758.835pt x 327.2225pt>
+<./fig/diagrama-senha.png, id=479, 758.835pt x 327.2225pt>
 File: ./fig/diagrama-senha.png Graphic file (type png)
 
 <use ./fig/diagrama-senha.png>
@@ -1035,8 +1006,8 @@ Package pdftex.def Info: ./fig/diagrama-senha.png used on input line 35.
 (pdftex.def)             Requested size: 384.10959pt x 165.638pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 39.
- [28 <./fig/diagrama-tunel.png>]
-<./fig/pedir-senha-alice.png, id=509, 319.1925pt x 390.45876pt>
+ [26 <./fig/diagrama-tunel.png>]
+<./fig/pedir-senha-alice.png, id=484, 319.1925pt x 390.45876pt>
 File: ./fig/pedir-senha-alice.png Graphic file (type png)
 
 <use ./fig/pedir-senha-alice.png>
@@ -1051,7 +1022,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 48.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 55.
-[29 <./fig/diagrama-senha.png> <./fig/pedir-senha-alice.png>]
+[27 <./fig/diagrama-senha.png> <./fig/pedir-senha-alice.png>]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 64.
 Package babel Info: Redefining portuges shorthand "|
@@ -1059,7 +1030,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 69.
 
-<./fig/diagrama-encrypt.png, id=516, 715.67375pt x 367.3725pt>
+<./fig/diagrama-encrypt.png, id=490, 715.67375pt x 367.3725pt>
 File: ./fig/diagrama-encrypt.png Graphic file (type png)
 
 <use ./fig/diagrama-encrypt.png>
@@ -1067,13 +1038,13 @@ Package pdftex.def Info: ./fig/diagrama-encrypt.png used on input line 78.
 (pdftex.def)             Requested size: 384.10959pt x 197.17297pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 86.
- [30 <./fig/diagrama-encrypt.png>]
+ [28 <./fig/diagrama-encrypt.png>]
 Package hyperref Info: bookmark level for unknown codigo defaults to 0 on input
  line 103.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 133.
 
-<./fig/diagrama-encrypt-consultar.png, id=522, 494.84875pt x 244.915pt>
+<./fig/diagrama-encrypt-consultar.png, id=496, 494.84875pt x 244.915pt>
 File: ./fig/diagrama-encrypt-consultar.png Graphic file (type png)
 
 <use ./fig/diagrama-encrypt-consultar.png>
@@ -1082,7 +1053,7 @@ e 140.
 (pdftex.def)             Requested size: 384.10959pt x 190.10611pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 144.
- [31]
+ [29]
 Overfull \hbox (31.64124pt too wide) in paragraph at lines 147--148
 []\T1/ptm/b/n/12 Endpoint exem-plo\T1/ptm/m/n/12 : \T1/pcr/m/n/12 /cryptows/enc
 rypt-content/requestId/123e4567-e89b-12d3 
@@ -1102,11 +1073,11 @@ ptografia ainda
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 185.
-[32 <./fig/diagrama-encrypt-consultar.png>]
+[30 <./fig/diagrama-encrypt-consultar.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 188.
 
-<./fig/diagrama-decrypt.png, id=532, 715.67375pt x 367.3725pt>
+<./fig/diagrama-decrypt.png, id=507, 715.67375pt x 367.3725pt>
 File: ./fig/diagrama-decrypt.png Graphic file (type png)
 
 <use ./fig/diagrama-decrypt.png>
@@ -1120,11 +1091,11 @@ r uma mensagem
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 224.
-[33 <./fig/diagrama-decrypt.png>]
+[31 <./fig/diagrama-decrypt.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 249.
 
-<./fig/diagrama-decrypt-consultar.png, id=538, 494.84875pt x 244.915pt>
+<./fig/diagrama-decrypt-consultar.png, id=513, 494.84875pt x 244.915pt>
 File: ./fig/diagrama-decrypt-consultar.png Graphic file (type png)
 
 <use ./fig/diagrama-decrypt-consultar.png>
@@ -1133,7 +1104,7 @@ e 257.
 (pdftex.def)             Requested size: 384.10959pt x 190.10611pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 261.
- [34]
+ [32]
 Overfull \hbox (31.64124pt too wide) in paragraph at lines 264--265
 []\T1/ptm/b/n/12 Endpoint exem-plo\T1/ptm/m/n/12 : \T1/pcr/m/n/12 /cryptows/dec
 rypt-content/requestId/123e4567-e89b-12d3 
@@ -1147,14 +1118,14 @@ ssamento
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 302.
-[35 <./fig/diagrama-decrypt-consultar.png>]) (./tex/cap_VI.tex
+[33 <./fig/diagrama-decrypt-consultar.png>]) (./tex/cap_VI.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
- [36]
+ [34]
 Cap\'{\i }tulo 6.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
-<./fig/openkeychain.png, id=553, 288.07625pt x 519.9425pt>
+<./fig/openkeychain.png, id=527, 288.07625pt x 519.9425pt>
 File: ./fig/openkeychain.png Graphic file (type png)
 
 <use ./fig/openkeychain.png>
@@ -1164,16 +1135,16 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 19.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 23.
- [37
+ [35
 
  <./fig/openkeychain.png>]
-<./fig/app-pgp.png, id=558, 218.8175pt x 389.455pt>
+<./fig/app-pgp.png, id=533, 218.8175pt x 389.455pt>
 File: ./fig/app-pgp.png Graphic file (type png)
  <use ./fig/app-pgp.png>
 Package pdftex.def Info: ./fig/app-pgp.png used on input line 27.
 (pdftex.def)             Requested size: 170.71393pt x 303.84499pt.
 
-<./fig/camadas.png, id=559, 779.91376pt x 248.93pt>
+<./fig/camadas.png, id=538, 779.91376pt x 248.93pt>
 File: ./fig/camadas.png Graphic file (type png)
  <use ./fig/camadas.png>
 Package pdftex.def Info: ./fig/camadas.png used on input line 38.
@@ -1181,8 +1152,8 @@ Package pdftex.def Info: ./fig/camadas.png used on input line 38.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 42.
 
-[38 <./fig/app-pgp.png>]
-<./fig/arquitetura.png, id=564, 892.33376pt x 434.62375pt>
+[36 <./fig/app-pgp.png>]
+<./fig/arquitetura.png, id=543, 892.33376pt x 434.62375pt>
 File: ./fig/arquitetura.png Graphic file (type png)
 
 <use ./fig/arquitetura.png>
@@ -1190,11 +1161,11 @@ Package pdftex.def Info: ./fig/arquitetura.png used on input line 48.
 (pdftex.def)             Requested size: 405.45045pt x 197.48221pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 64.
- [39 <./fig/camadas.png> <./fig/arquitetura.png>]
+ [37 <./fig/camadas.png> <./fig/arquitetura.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 68.
 
-<./fig/postman-encrypt-content.png, id=572, 673.51625pt x 594.22pt>
+<./fig/postman-encrypt-content.png, id=551, 673.51625pt x 594.22pt>
 File: ./fig/postman-encrypt-content.png Graphic file (type png)
 
 <use ./fig/postman-encrypt-content.png>
@@ -1202,7 +1173,7 @@ Package pdftex.def Info: ./fig/postman-encrypt-content.png used on input line 7
 6.
 (pdftex.def)             Requested size: 384.10959pt x 338.89026pt.
 
-<./fig/postman-encript-content-result.png, id=573, 816.04875pt x 566.115pt>
+<./fig/postman-encript-content-result.png, id=552, 816.04875pt x 566.115pt>
 File: ./fig/postman-encript-content-result.png Graphic file (type png)
 
 <use ./fig/postman-encript-content-result.png>
@@ -1211,8 +1182,8 @@ Package pdftex.def Info: ./fig/postman-encript-content-result.png used on input
 (pdftex.def)             Requested size: 384.10959pt x 266.47144pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 88.
- [40 <./fig/postman-encrypt-content.png>] <./fig/postman-decrypt-content.png, i
-d=579, 819.06pt x 571.13374pt>
+ [38 <./fig/postman-encrypt-content.png>] <./fig/postman-decrypt-content.png, i
+d=558, 819.06pt x 571.13374pt>
 File: ./fig/postman-decrypt-content.png Graphic file (type png)
 
 <use ./fig/postman-decrypt-content.png>
@@ -1220,7 +1191,7 @@ Package pdftex.def Info: ./fig/postman-decrypt-content.png used on input line 9
 2.
 (pdftex.def)             Requested size: 384.10959pt x 267.849pt.
 
-<./fig/postman-decrypt-result.png, id=580, 819.06pt x 567.11874pt>
+<./fig/postman-decrypt-result.png, id=559, 819.06pt x 567.11874pt>
 File: ./fig/postman-decrypt-result.png Graphic file (type png)
 
 <use ./fig/postman-decrypt-result.png>
@@ -1229,7 +1200,7 @@ Package pdftex.def Info: ./fig/postman-decrypt-result.png used on input line 10
 (pdftex.def)             Requested size: 384.10959pt x 265.96605pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 104.
- [41 <./fig/postman-encript-content-result.png> <./fig/postman-decrypt-content.
+ [39 <./fig/postman-encript-content-result.png> <./fig/postman-decrypt-content.
 png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 106.
@@ -1237,17 +1208,17 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 111.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 118.
- [42 <./fig/postman-decrypt-result.png>]) (./tex/cap_VII.tex
+ [40 <./fig/postman-decrypt-result.png>]) (./tex/cap_VII.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
- [43]
+ [41]
 Cap\'{\i }tulo 7.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
 ) (./tex/cap_VIII.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
- [44
+ [42
 
 ]
 Cap\'{\i }tulo 8.
@@ -1256,7 +1227,7 @@ Package babel Info: Redefining portuges shorthand "|
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 95.
- [45
+ [43
 
 ] (./modelo-tese.bbl
 Package babel Info: Redefining portuges shorthand "|
@@ -1275,7 +1246,7 @@ Underfull \hbox (badness 1275) in paragraph at lines 62--66
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 78.
-[46
+[44
 
 
 ]
@@ -1286,7 +1257,7 @@ c-ni-cos em to-kens da se-
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 163.
-[47]
+[45]
 Underfull \hbox (badness 2318) in paragraph at lines 165--171
 []\T1/phv/m/sc/12 Symantec.  \T1/phv/b/n/12 Whi-te-pa-per - ke-e-ping your pri-
 vate data se-cure\T1/phv/m/n/12 .  [][]$\T1/pcr/m/n/12 https :
@@ -1313,28 +1284,28 @@ heguardian . com / technology / 2014 / nov / 19 /
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 103.
- [48] (./pos/apend_I.tex
+ [46] (./pos/apend_I.tex
 Ap\^endice A.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
 ) (./pos/apend_II.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
- [49
+ [47
 
 
 ]
 Ap\^endice B.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
-<./fig/2-listar-chaves.png, id=675, 615.29875pt x 191.71625pt>
+<./fig/2-listar-chaves.png, id=653, 615.29875pt x 191.71625pt>
 File: ./fig/2-listar-chaves.png Graphic file (type png)
 
 <use ./fig/2-listar-chaves.png>
 Package pdftex.def Info: ./fig/2-listar-chaves.png used on input line 9.
 (pdftex.def)             Requested size: 384.10959pt x 119.68486pt.
 
-<./fig/1-gerar-chave.png, id=676, 604.2575pt x 608.2725pt>
+<./fig/1-gerar-chave.png, id=654, 604.2575pt x 608.2725pt>
 File: ./fig/1-gerar-chave.png Graphic file (type png)
 
 <use ./fig/1-gerar-chave.png>
@@ -1342,17 +1313,17 @@ Package pdftex.def Info: ./fig/1-gerar-chave.png used on input line 19.
 (pdftex.def)             Requested size: 384.10959pt x 386.65714pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 23.
- [50
+ [48
 
  <./fig/2-listar-chaves.png>]
-<./fig/gerar-chave-resutado.png, id=681, 613.29124pt x 233.87375pt>
+<./fig/gerar-chave-resutado.png, id=660, 613.29124pt x 233.87375pt>
 File: ./fig/gerar-chave-resutado.png Graphic file (type png)
 
 <use ./fig/gerar-chave-resutado.png>
 Package pdftex.def Info: ./fig/gerar-chave-resutado.png used on input line 27.
 (pdftex.def)             Requested size: 384.10959pt x 146.47762pt.
 
-<./fig/3-decrypt-message.png, id=682, 611.28375pt x 216.81pt>
+<./fig/3-decrypt-message.png, id=661, 611.28375pt x 216.81pt>
 File: ./fig/3-decrypt-message.png Graphic file (type png)
 
 <use ./fig/3-decrypt-message.png>
@@ -1361,17 +1332,17 @@ Package pdftex.def Info: ./fig/3-decrypt-message.png used on input line 37.
 ) (./pos/apend_III.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
- [51 <./fig/1-gerar-chave.png> <./fig/gerar-chave-resutado.png>]
+ [49 <./fig/1-gerar-chave.png> <./fig/gerar-chave-resutado.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
- [52 <./fig/3-decrypt-message.png>]
+ [50 <./fig/3-decrypt-message.png>]
 Ap\^endice C.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
 ) (./pos/apend_IV.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
- [53
+ [51
 
 ]
 Ap\^endice D.
@@ -1380,7 +1351,7 @@ Package babel Info: Redefining portuges shorthand "|
 ) (./pos/apend_V.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
- [54
+ [52
 
 ]
 Ap\^endice E.
@@ -1389,13 +1360,13 @@ Package babel Info: Redefining portuges shorthand "|
 ) (./pos/apend_VI.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
- [55
+ [53
 
 ]
 Ap\^endice F.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1.
-<./fig/cliente-pgp.png, id=704, 533.995pt x 503.8825pt>
+<./fig/cliente-pgp.png, id=683, 533.995pt x 503.8825pt>
 File: ./fig/cliente-pgp.png Graphic file (type png)
 
 <use ./fig/cliente-pgp.png>
@@ -1403,39 +1374,20 @@ Package pdftex.def Info: ./fig/cliente-pgp.png used on input line 11.
 (pdftex.def)             Requested size: 298.75262pt x 281.91855pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 17.
- [56
+ [54
 
- <./fig/cliente-pgp.png>]) (./pos/apend_VII.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1.
-
-[57]
-Ap\^endice G.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1.
-) (./pos/apend_VIII.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1.
- [58
-
-]
-Ap\^endice H.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1.
-) 
+ <./fig/cliente-pgp.png>]) (./pos/apend_VII.tex) (./pos/apend_VIII.tex) 
 AED: lastpage setting LastPage
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 114.
-[59
-
-]
+[55]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
  (./modelo-tese.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
 Package rerunfilecheck Info: File `modelo-tese.out' has not changed.
-(rerunfilecheck)             Checksum: B9930D2BEAC4627373EC2DB1EC12D741;3573.
+(rerunfilecheck)             Checksum: BD352D8AD3886CF66DC4F35F11A6D4ED;3336.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1443,11 +1395,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
  ) 
 Here is how much of TeX's memory you used:
- 11018 strings out of 493029
- 166330 string characters out of 6136234
- 285463 words of memory out of 5000000
- 14053 multiletter control sequences out of 15000+600000
- 106624 words of font info for 105 fonts, out of 8000000 for 9000
+ 11001 strings out of 493029
+ 166143 string characters out of 6136234
+ 285548 words of memory out of 5000000
+ 14049 multiletter control sequences out of 15000+600000
+ 103902 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,12n,50p,896b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1458,10 +1410,10 @@ lvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on modelo-tese.pdf (61 pages, 1615188 bytes).
+Output written on modelo-tese.pdf (57 pages, 1473287 bytes).
 PDF statistics:
- 789 PDF objects out of 1000 (max. 8388607)
- 677 compressed objects within 7 object streams
- 171 named destinations out of 1000 (max. 500000)
- 502 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 758 PDF objects out of 1000 (max. 8388607)
+ 650 compressed objects within 7 object streams
+ 165 named destinations out of 1000 (max. 500000)
+ 470 words of extra memory for PDF output out of 10000 (max. 10000000)
 

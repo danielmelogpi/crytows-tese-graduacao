@@ -11,37 +11,33 @@
 \BOOKMARK [1][-]{pretexto.9.1}{Abstract}{pretexto.0}% 11
 \BOOKMARK [0][-]{sumario.0}{Sum\341rio}{}% 12
 \BOOKMARK [0][-]{Doc-Start}{Lista de Figuras}{}% 13
-\BOOKMARK [0][-]{Doc-Start}{Lista de Tabelas}{}% 14
-\BOOKMARK [0][-]{Doc-Start}{Lista de Algoritmos}{}% 15
-\BOOKMARK [0][-]{section*.1}{Lista de C\363digos de Programas}{}% 16
-\BOOKMARK [0][-]{chapter.2}{1 Introdu\347\343o}{}% 17
-\BOOKMARK [0][-]{chapter.3}{2 Desafios da criptografia fim a fim}{}% 18
-\BOOKMARK [0][-]{chapter.4}{3 Uso do padr\343o OpenPGP para criptografia}{}% 19
-\BOOKMARK [0][-]{chapter.5}{4 Analise de formas de acesso \340 chaveiros criptogr\341ficos}{}% 20
-\BOOKMARK [1][-]{section.6}{4.1 Acesso atrav\351s de linha de comando e bibliotecas}{chapter.5}% 21
-\BOOKMARK [1][-]{section.10}{4.2 Token de Seguran\347a M\363vel}{chapter.5}% 22
-\BOOKMARK [1][-]{section.13}{4.3 Considera\347\365es}{chapter.5}% 23
-\BOOKMARK [0][-]{chapter.14}{5 Proposta de chaveiro pessoal m\363vel acess\355vel por Webservices}{}% 24
-\BOOKMARK [1][-]{section.15}{5.1 Descri\347\343o da proposta}{chapter.14}% 25
-\BOOKMARK [1][-]{section.19}{5.2 Opera\347\365es dos Webservices}{chapter.14}% 26
-\BOOKMARK [2][-]{subsection.20}{5.2.1 Autoriza\347\343o para utilizar os servi\347os}{section.19}% 27
-\BOOKMARK [2][-]{subsection.21}{5.2.2 Criptografar um novo conte\372do}{section.19}% 28
-\BOOKMARK [2][-]{subsection.25}{5.2.3 Consultar resultado da criptografia de conte\372do}{section.19}% 29
-\BOOKMARK [2][-]{subsection.29}{5.2.4 Descriptografar uma mensagem PGP recebida}{section.19}% 30
-\BOOKMARK [2][-]{subsection.33}{5.2.5 Consultar resultado da descriptografia de conte\372do}{section.19}% 31
-\BOOKMARK [0][-]{chapter.37}{6 Experimento}{}% 32
-\BOOKMARK [1][-]{section.39}{6.1 Implementa\347\343o dos servi\347os para o chaveiro PGP}{chapter.37}% 33
-\BOOKMARK [1][-]{section.43}{6.2 Demonstra\347\343o do consumo dos servi\347os}{chapter.37}% 34
-\BOOKMARK [1][-]{section.48}{6.3 An\341lise de desempenho da solu\347\343o}{chapter.37}% 35
-\BOOKMARK [1][-]{section.49}{6.4 An\341lise de vulnerabilidades da solu\347\343o}{chapter.37}% 36
-\BOOKMARK [0][-]{chapter.50}{7 Trabalhos futuros}{}% 37
-\BOOKMARK [0][-]{chapter.51}{8 Conclus\343o}{}% 38
-\BOOKMARK [0][-]{chapter.51}{Refer\352ncias Bibliogr\341ficas}{}% 39
-\BOOKMARK [0][-]{appendix.52}{A Informa\347\365es hist\363ricas do PGP}{}% 40
-\BOOKMARK [0][-]{appendix.53}{B Demonstra\347\343o de cria\347\343o de chave e descriptografia com GnuPG}{}% 41
-\BOOKMARK [0][-]{appendix.58}{C Detalhes do dispositivo m\363vel usado para testes}{}% 42
-\BOOKMARK [0][-]{appendix.59}{D Detalhes de itens de configura\347\343o do aplicativo}{}% 43
-\BOOKMARK [0][-]{appendix.60}{E Ambiente de desenvolvimento utilizado no experimento}{}% 44
-\BOOKMARK [0][-]{appendix.61}{F Exemplo de cliente que consome os servi\347os criptogr\341ficos}{}% 45
-\BOOKMARK [0][-]{appendix.63}{G Exemplo de um Ap\352ndice}{}% 46
-\BOOKMARK [0][-]{appendix.64}{H Exemplo de um Ap\352ndice}{}% 47
+\BOOKMARK [0][-]{section*.1}{Lista de C\363digos de Programas}{}% 14
+\BOOKMARK [0][-]{chapter.2}{1 Introdu\347\343o}{}% 15
+\BOOKMARK [0][-]{chapter.3}{2 Desafios da criptografia fim a fim}{}% 16
+\BOOKMARK [0][-]{chapter.4}{3 Uso do padr\343o OpenPGP para criptografia}{}% 17
+\BOOKMARK [0][-]{chapter.5}{4 Analise de formas de acesso \340 chaveiros criptogr\341ficos}{}% 18
+\BOOKMARK [1][-]{section.6}{4.1 Acesso atrav\351s de linha de comando e bibliotecas}{chapter.5}% 19
+\BOOKMARK [1][-]{section.10}{4.2 Token de Seguran\347a M\363vel}{chapter.5}% 20
+\BOOKMARK [1][-]{section.13}{4.3 Considera\347\365es}{chapter.5}% 21
+\BOOKMARK [0][-]{chapter.14}{5 Proposta de chaveiro pessoal m\363vel acess\355vel por Webservices}{}% 22
+\BOOKMARK [1][-]{section.15}{5.1 Descri\347\343o da proposta}{chapter.14}% 23
+\BOOKMARK [1][-]{section.19}{5.2 Opera\347\365es dos Webservices}{chapter.14}% 24
+\BOOKMARK [2][-]{subsection.20}{5.2.1 Autoriza\347\343o para utilizar os servi\347os}{section.19}% 25
+\BOOKMARK [2][-]{subsection.21}{5.2.2 Criptografar um novo conte\372do}{section.19}% 26
+\BOOKMARK [2][-]{subsection.25}{5.2.3 Consultar resultado da criptografia de conte\372do}{section.19}% 27
+\BOOKMARK [2][-]{subsection.29}{5.2.4 Descriptografar uma mensagem PGP recebida}{section.19}% 28
+\BOOKMARK [2][-]{subsection.33}{5.2.5 Consultar resultado da descriptografia de conte\372do}{section.19}% 29
+\BOOKMARK [0][-]{chapter.37}{6 Experimento}{}% 30
+\BOOKMARK [1][-]{section.39}{6.1 Implementa\347\343o dos servi\347os para o chaveiro PGP}{chapter.37}% 31
+\BOOKMARK [1][-]{section.43}{6.2 Demonstra\347\343o do consumo dos servi\347os}{chapter.37}% 32
+\BOOKMARK [1][-]{section.48}{6.3 An\341lise de desempenho da solu\347\343o}{chapter.37}% 33
+\BOOKMARK [1][-]{section.49}{6.4 An\341lise de vulnerabilidades da solu\347\343o}{chapter.37}% 34
+\BOOKMARK [0][-]{chapter.50}{7 Trabalhos futuros}{}% 35
+\BOOKMARK [0][-]{chapter.51}{8 Conclus\343o}{}% 36
+\BOOKMARK [0][-]{chapter.51}{Refer\352ncias Bibliogr\341ficas}{}% 37
+\BOOKMARK [0][-]{appendix.52}{A Informa\347\365es hist\363ricas do PGP}{}% 38
+\BOOKMARK [0][-]{appendix.53}{B Demonstra\347\343o de cria\347\343o de chave e descriptografia com GnuPG}{}% 39
+\BOOKMARK [0][-]{appendix.58}{C Detalhes do dispositivo m\363vel usado para testes}{}% 40
+\BOOKMARK [0][-]{appendix.59}{D Detalhes de itens de configura\347\343o do aplicativo}{}% 41
+\BOOKMARK [0][-]{appendix.60}{E Ambiente de desenvolvimento utilizado no experimento}{}% 42
+\BOOKMARK [0][-]{appendix.61}{F Exemplo de cliente que consome os servi\347os criptogr\341ficos}{}% 43

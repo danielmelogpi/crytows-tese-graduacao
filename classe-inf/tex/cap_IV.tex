@@ -10,7 +10,7 @@ A obra de W. Lucas traz várias das funções de acesso à recursos PGP explicadas c
 
 O GnuPG é uma implementação da do formato OpenPGP, que permite a geração e uso das chaves privadas em interface de linha de comando. Essa é a principal implementação do formato em uso atualmente, e é instalada por padrão em várias distribuições Linux. Também está disponível para Microsoft Windows por meio da suite Gpg4win. Essa implementação é uma ferramenta completa, contando com todas as operações esperadas de um chaveiro criptográfico.
 
-Como exemplo de acesso ao chaveiro por linha de comando, segue como criptografar um arquivo textual com a chave pública de um usuário fictício, cujo e-mail é bob@email.com e a assinatura pelo usuário de e-mail alice@email.com. Bob representa quem receberá a mensagem e Alice será o emitente neste exemplo. O anexo XX traz também um pequeno passo-a-passo de como criar novos pares de chave e como descriptografar a mensagem deste exemplo.
+Como exemplo de acesso ao chaveiro por linha de comando, segue como criptografar um arquivo textual com a chave pública de um usuário fictício, cujo e-mail é bob@email.com e a assinatura pelo usuário de e-mail alice@email.com. Bob representa quem receberá a mensagem e Alice será o emitente neste exemplo. O Apêndice \ref{apend:2} traz também um pequeno passo-a-passo de como criar novos pares de chave e como descriptografar a mensagem deste exemplo.
 
 Para que esta chave seja usada para criptografar um conteúdo utilizamos o mesmo comando gpg, agora com a instrução --encrypt, seguido de --local-user indicando a chave do usuário emitente da mensagem e --recipient, que indica o usuário que receberá a mensagem. No exemplo abaixo o usuário Bob encriptará uma mensagem para Alice. O comando completo será:
 
