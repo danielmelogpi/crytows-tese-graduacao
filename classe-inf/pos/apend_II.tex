@@ -1,213 +1,40 @@
-\chapter{Exemplo de Outro Apêndice}
+\chapter{Demonstração de criação de chave e descriptografia com GnuPG}
 \label{apend:2}
-Texto do Apêndice~\ref{apend:2}.
+Como exemplo do acesso ao chaveiro por linha de comando, a seguir teremos o exemplo da geração de um novo par de chaves PGP através do GnuPG e de como usá-la para criptografar o conteúdo textual de um arquivo e descriptografá-lo logo depois.
 
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
+Para a geração de novas chaves, deve-se usar o comando gpg seguido da instrução --gen-key. A aplicação então questionará o usuário a respeito dos detalhes da operação e, após a conclusão, uma nova chave privada estará disponível no chaveiro. Essas informações dizem respeito ao tipo de chave desejada, aos dados do usuário, como nome e endereço de e-mail, a validade da chave e a senha que protegerá a chave privada. O será informado ao final da criação do identificador da sua chave, que no exemplo abaixo é o código A4D9 244A 24DE 2555 3177  C88B ED54 9C38 274F 10C4. O comando gpg --list-keys pode ser usado para listar as chaves conhecidas, revelando a nova chave recém-criada.
 
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/2-listar-chaves.png}
+ \caption{Listagem de chaves presententes no chaveiro GnuPG}
+ \label{fig:exemploFig2}
+\end{figure}
 
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
 
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
+Todas os demais parâmetros possíveis podem ser consultados com o comando gpg --help e man gpg. 
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/1-gerar-chave.png}
+ \caption{Comando e questionário para geração de nova chave com GnuPG}
+ \label{fig:exemploFig2}
+\end{figure}
 
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/gerar-chave-resutado.png}
+ \caption{Resultado da geração da chave}
+ \label{fig:exemploFig2}
+\end{figure}
 
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
 
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
+Para descriptografar a mesma mensagem usando a chave do usuário destinatário podemos usar o comando gpg --decrypt --output mensagem.original.txt  mensagem.cifrada.pgp
 
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
-Apêndices são iniciados com o comando \verb|\apendices|.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/3-decrypt-message.png}
+ \caption{Resultado da geração da chave}
+ \label{fig:exemploFig2}
+\end{figure}

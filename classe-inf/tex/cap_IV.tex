@@ -6,7 +6,7 @@ Várias aplicações fazem uso do chaveiro PGP para melhorar a segurança dos seus r
 
 \section{Acesso através de linha de comando e bibliotecas}
 \label{sec:acessoLinhaComando} 
-A obra de W. Lucas traz várias das funções de acesso à recursos PGP explicadas com rico detalhe, além de exemplos de uso [REF32]. A aplicação GnuPG é uma das formas mais conhecidas de fazer uso de chaves PGP. 
+A obra de W. Lucas traz várias das funções de acesso à recursos PGP explicadas com rico detalhe, além de exemplos de uso \cite{lucas2006pgp}. A aplicação GnuPG \cite{gnupgHome} é uma das formas mais conhecidas de fazer uso de chaves PGP. 
 
 O GnuPG é uma implementação da do formato OpenPGP, que permite a geração e uso das chaves privadas em interface de linha de comando. Essa é a principal implementação do formato em uso atualmente, e é instalada por padrão em várias distribuições Linux. Também está disponível para Microsoft Windows por meio da suite Gpg4win. Essa implementação é uma ferramenta completa, contando com todas as operações esperadas de um chaveiro criptográfico.
 
@@ -38,14 +38,14 @@ No comando acima, os detalhes da operação são os seguintes:
 \end{figure}
 
 
-Essa forma de acesso pode ser explorada por qualquer aplicação que resida na máquina onde o GnuPG está instalado. Além da chamada pelo binário gpg, demonstrada anteriormente, o gpg instalado em estações de trabalho contém uma biblioteca padrão chamada GPGME, que oferece exposição de recursos da aplicação de forma padronizado para linguagens diversas. Em aplicações que fazem uso do chaveiro instalado localmente essas chamadas são abstraídas por diversas bibliotecas, de acordo com a linguagem desejada. A página de ferramentas do GnuPG trás alguns exemplos dessas bibliotecas [REF21]. Alguns exemplos são:
+Essa forma de acesso pode ser explorada por qualquer aplicação que resida na máquina onde o GnuPG está instalado. Além da chamada pelo binário gpg, demonstrada anteriormente, o gpg instalado em estações de trabalho contém uma biblioteca padrão chamada GPGME, que oferece exposição de recursos da aplicação de forma padronizado para linguagens diversas. Em aplicações que fazem uso do chaveiro instalado localmente essas chamadas são abstraídas por diversas bibliotecas, de acordo com a linguagem desejada. A página de ferramentas do GnuPG trás alguns exemplos dessas bibliotecas \cite{gnupgSoftwareList}. Alguns exemplos são:
 
 \begin{itemize}  
-\item gpgme - A biblioteca padrão fornecida pelo GnuPG, já citada [REF22]
-\item \verb|gpg_encrypt()|  - Função nativa da linguagem PHP [REF23]
-\item py-gnupgp - Módulo para linguagem Python que faz interface com o GnuPG [REF24]
-\item gnupg-for-java - Biblioteca para linguagem Java que expõe os recursos da biblioteca gpgme[REF25]
-\item ruby-gpgme - Biblioteca para linguagem Ruby que expõe os recursos da gpgme [REF26]
+\item gpgme - A biblioteca padrão fornecida pelo GnuPG, já citada \cite{gpgMe}
+\item \verb|gpg_encrypt()|  - Função nativa da linguagem PHP \cite{gpgEncryptPHP}
+\item py-gnupgp - Módulo para linguagem Python que faz interface com o GnuPG \cite{pyGnupg}
+\item gnupg-for-java - Biblioteca para linguagem Java que expõe os recursos da biblioteca gpgme \cite{gnupgJava}
+\item ruby-gpgme - Biblioteca para linguagem Ruby que expõe os recursos da gpgme \cite{rubyGPG}
 \end{itemize}
 
 
@@ -60,7 +60,7 @@ O Enigmail é um plugin desenvolvido para o cliente de e-mail Mozilla Thunderbird
  \label{fig:exemploFig2}
 \end{figure}
 
-O Apache OpenPGP é uma extensão para o servidor HTTP Apache que permite que requisições HTTP sejam assinadas e verificadas pelo servidor. Ela faz par com a extensão Enigform para o Firefox, que modifica as requisições usando a instalação local do chaveiro PGP.
+O Apache OpenPGP \cite{modAuthMainPage} é uma extensão para o servidor HTTP Apache que permite que requisições HTTP sejam assinadas e verificadas pelo servidor. Ela faz par com a extensão Enigform \cite{enigformMainPage}  para o Firefox, que modifica as requisições usando a instalação local do chaveiro PGP.
 
 
 \begin{figure}[H]
@@ -76,7 +76,7 @@ O Apache OpenPGP é uma extensão para o servidor HTTP Apache que permite que requ
 
 Tokens móveis são dispositivos capazes de oferecer recursos de segurança e ainda manter a capacidade de transporte desses recursos. Eles costumam carregar consigo senhas, dados biométricos ou chaves criptográficas.
 
-Esses dispositivos são um conjunto de um token, com formato similar ao de um cartão de memória ou de um pendrive, e o software que é instalado na estação de trabalho que permite acessá-lo. Os dispositivos levam consigo as chaves privadas e públicas do usuário ou empresa, além de uma cadeia de certificados ligados à  Autoridade Certificadora Raiz da ICP-Brasil [REF28]. Existe a possibilidade de usar esses recursos para criptografar conteúdo, realizar assinaturas digitais e mesmo encriptar conexões HTTPS, estabelecendo identificação entre aplicações remotas de forma confiável e juridicamente aceita.
+Esses dispositivos são um conjunto de um token, com formato similar ao de um cartão de memória ou de um pendrive, e o software que é instalado na estação de trabalho que permite acessá-lo. Os dispositivos levam consigo as chaves privadas e públicas do usuário ou empresa, além de uma cadeia de certificados ligados à  Autoridade Certificadora Raiz da ICP-Brasil \cite{icpBrasil}. Existe a possibilidade de usar esses recursos para criptografar conteúdo, realizar assinaturas digitais e mesmo encriptar conexões HTTPS, estabelecendo identificação entre aplicações remotas de forma confiável e juridicamente aceita.
 
 Alguns dos tipos de tokens móveis são:
 \begin{itemize}
@@ -99,13 +99,9 @@ Uma das soluções mais conhecidas no Brasil é o e-CPF, para pessoa física, e o e-
  \label{fig:exemploFig2}
 \end{figure}
 
+Avaliando os dispositivos oferecidos pela Serasa, uma das maiores revendedoras do país, nota-se que não existe suporte para outros sistemas operacionais que não o Microsoft Windows a partir da versão XP \cite{reqTokenSerasa}. O acesso as operações do token é feito a partir do software que o acompanha. Aplicações que desejam usar essa aplicação devem acessar as bibliotecas fornecidas por cada fabricante instaladas no sistema operacional.
 
-
-
-
-Avaliando os dispositivos oferecidos pela Serasa, uma das maiores revendedoras do país, nota-se que não existe suporte para outros sistemas operacionais que não o Microsoft Windows a partir da versão XP [REF 29]. O acesso as operações do token é feito a partir do software que o acompanha. Aplicações que desejam usar essa aplicação devem acessar as bibliotecas fornecidas por cada fabricante instaladas no sistema operacional.
-
-A Certisign oferece, além desses modelos, uma versão para celular [REF29]. A aplicação está disponível para Windows, MacOS e Android. A criação e validação dos certificados acontece presencialmente e, com alguns códigos de segurança, o certificado pode ser emitido no dispositivo. O acesso à essa instalação no dispositivo móvel também é feito por meio de software da fabricante, de forma similar aos desenvolvidos pela Serasa.
+A Certisign oferece, além desses modelos, uma versão para celular \cite{certisignSistemas}. A aplicação está disponível para Windows, MacOS e Android. A criação e validação dos certificados acontece presencialmente e, com alguns códigos de segurança, o certificado pode ser emitido no dispositivo. O acesso à essa instalação no dispositivo móvel também é feito por meio de software da fabricante, de forma similar aos desenvolvidos pela Serasa.
 
 Em ambos os casos apresentados, o acesso pode ser simplificado pelo seguinte diagrama:
 

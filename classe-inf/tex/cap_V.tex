@@ -14,7 +14,7 @@ A principal vantagem do uso de  web services é a simplicidade de uso por parte d
 
 Usando chamadas remotas de webservice será possível fazer uso dos recursos independente de uma instalação na máquina cliente dedicada à manipulação das chaves conhecidas, mantendo todo o arcabouço de segurança de interesse do usuário centralizado em seu dispositivo. 
 
-Para isso será usada uma uma implementação de chaveiro criptográfico disponível para Android chamada Open KeyChain [REF27]. Ela implementa um chaveiro PGP com uma interface simples para o usuário final. Essa ferramenta de código aberto dá suporte completo à geração de chaves privadas, importação de chaves públicas de diversos servidores comunitários, criptografia, descriptografia, assinatura e verificação de assinaturas no conteúdo desejado. Note-se que esta aplicação já se encontra pronta para uso na plataforma Android.
+Para isso será usada uma uma implementação de chaveiro criptográfico disponível para Android chamada Open KeyChain \cite{openKeyChain}. Ela implementa um chaveiro PGP com uma interface simples para o usuário final. Essa ferramenta de código aberto dá suporte completo à geração de chaves privadas, importação de chaves públicas de diversos servidores comunitários, criptografia, descriptografia, assinatura e verificação de assinaturas no conteúdo desejado. Note-se que esta aplicação já se encontra pronta para uso na plataforma Android.
 
 O escopo deste trabalho está em demonstrar a viabilidade do uso de um chaveiro criptográfico em dispositivo móvel por meio de consultas HTTP aos  web services desenvolvidos, na forma de um um software com serviços desenvolvidos para demonstrar essa viabilidade e testar a proposta. 
 
@@ -83,7 +83,7 @@ Esta operação demanda um conteúdo textual para ser encriptado e o e-mail do dest
 \begin{itemize}
 \item \textbf{Endpoint}: \texttt{/cryptows/encrypt-content}
 \item \textbf{Método HTTP}: POST
-\item \textbf{Content-type}: application/json
+\item \textbf{Content-type}:  \texttt{application/json}
 \end{itemize}
 
 Para criptografar um novo conteúdo deve ser enviado um objeto JSON com os seguintes atributos:
@@ -95,12 +95,11 @@ Para criptografar um novo conteúdo deve ser enviado um objeto JSON com os seguin
 \end{itemize}
 
 
-Exemplo:
 \begin{center}
- \begin{minipage}{0.7\textwidth}
+ \begin{minipage}{0.9\textwidth}
   \begin{codigo}[H]
    \small
-   \VerbatimInput[xleftmargin=10mm,numbers=left,obeytabs=true]{./prog/exemplo-json-criptografar.json}
+   \VerbatimInput[xleftmargin=10mm,numbers=left,obeytabs=true]{./prog/1-criptografar-pedido.json}
    \caption{\texttt{Mensagem do pedido de criptografia} }
    \label{code:exemplo-json-criptografar}
   \end{codigo}
@@ -119,12 +118,11 @@ O formato dessa resposta conterá os seguintes dados, em formato JSON:
 \end{itemize}
 
 
-Exemplo:
 \begin{center}
- \begin{minipage}{0.7\textwidth}
+ \begin{minipage}{0.9\textwidth}
   \begin{codigo}[H]
    \small
-   \VerbatimInput[xleftmargin=10mm,numbers=left,obeytabs=true]{./prog/exemplo-json-resposta-criptografar.json}
+   \VerbatimInput[xleftmargin=10mm,numbers=left,obeytabs=true]{./prog/2-criptografar-pedido-resposta.json}
    \caption{\texttt{Resposta do pedido de criptografia} }
    \label{code:exemplo-json-resposta-criptografar}
   \end{codigo}
@@ -146,9 +144,9 @@ Esta operação somente exige o identificador do do pedido anterior de criptografi
 
 
 \begin{itemize}
-\item \textbf{Endpoint}: \texttt{/cryptows/encrypt-content/requestId/123e4567-e89b-12d3-a456-426655}
+\item \textbf{Endpoint exemplo}: \texttt{/cryptows/encrypt-content/requestId/123e4567-e89b-12d3}
 \item \textbf{Método HTTP}: GET
-\item \textbf{Content-type}: application/json
+\item \textbf{Content-type}: \texttt{application/json}
 \end{itemize}
 
 
@@ -162,34 +160,29 @@ O formato dessa resposta conterá os seguintes dados, em formato JSON:
 \end{itemize}
 
 
+\begin{center}
+ \begin{minipage}{0.9\textwidth}
+  \begin{codigo}[H]
+   \small
+   \VerbatimInput[xleftmargin=10mm,numbers=left,obeytabs=true]{./prog/3-criptografar-consulta-ok.json}
+   \caption{\texttt{Resposta do pedido de criptografia em caso de processamento concluído} }
+   \label{code:exemplo-json-resposta-criptografar}
+  \end{codigo}
+ \end{minipage}
+\end{center}
 
 
 
-Exemplo em caso de processamento concluído:
-%%
-%%\begin{center}
-%% \begin{minipage}{0.7\textwidth}
-%%  \begin{codigo}[H]
-%%   \small
-%%   \VerbatimInput[xleftmargin=10mm,numbers=left,obeytabs=true]{./prog/resp-consulta-cripto.json}
-%%   \caption{\texttt{Resposta da consulta à pedido de criptografia concluído} }
-%%   \label{code:resp-consulta-cripto}
-%%  \end{codigo}
-%% \end{minipage}
-%%\end{center}
-
-%%Exemplo em caso de processamento ainda em andamento:
-%%\begin{center}
-%% \begin{minipage}{0.7\textwidth}
-%%  \begin{codigo}[H]
-%%   \small
-%%   \VerbatimInput[xleftmargin=10mm,numbers=left,obeytabs=true]{./prog/resp-consulta-cripto404.json}
-%%   \caption{\texttt{Resposta da consulta à pedido de criptografia ainda em andamento} }
-%%   \label{code:resp-consulta-cripto404}
-%%  \end{codigo}
-%% \end{minipage}
-%%\end{center}
-
+\begin{center}
+ \begin{minipage}{0.9\textwidth}
+  \begin{codigo}[H]
+   \small
+   \VerbatimInput[xleftmargin=10mm,numbers=left,obeytabs=true]{./prog/4-criptografar-consulta-404.json}
+   \caption{\texttt{Resposta da consulta à pedido de criptografia ainda em andamento} }
+   \label{code:exemplo-json-resposta-criptografar}
+  \end{codigo}
+ \end{minipage}
+\end{center}
 
 
 \subsection{Descriptografar uma mensagem PGP recebida}
@@ -208,7 +201,7 @@ Esta operação demanda uma mensagem em formato OpenPGP em ASCII Armour para uma t
 \begin{itemize}
 \item \textbf{Endpoint}: \texttt{/cryptows/decrypt-content}
 \item \textbf{Método HTTP}: POST
-\item \textbf{Content-type}: application/json
+\item \textbf{Content-type}:  \texttt{application/json}
 \end{itemize}
 
 Para descriptografar um novo conteúdo deve ser enviado um objeto JSON com os seguintes atributos:
@@ -219,22 +212,20 @@ Para descriptografar um novo conteúdo deve ser enviado um objeto JSON com os seg
 
 
 
-Exemplo:
-%%Exemplo em caso de processamento ainda em andamento:
-%%\begin{center}
-%% \begin{minipage}{0.7\textwidth}
-%%  \begin{codigo}[H]
-%%   \small
-%%   \VerbatimInput[xleftmargin=10mm,numbers=left,obeytabs=true]{./prog/pedido-descriptografar.json}
-%%   \caption{\texttt{Resposta da consulta à pedido de criptografia ainda em andamento} }
-%%   \label{code:resp-consulta-cripto404}
-%%  \end{codigo}
-%% \end{minipage}
-%%\end{center}
+\begin{center}
+ \begin{minipage}{0.9\textwidth}
+  \begin{codigo}[H]
+   \small
+   \VerbatimInput[xleftmargin=10mm,numbers=left,obeytabs=true]{./prog/5-descriptografar-pedido.json}
+   \caption{\texttt{Mensagem enviada para descriptografar uma mensagem OpenPGP} }
+   \label{code:exemplo-json-resposta-criptografar}
+  \end{codigo}
+ \end{minipage}
+\end{center}
+
 
 A resposta deste serviço em caso de sucesso fará uso do código HTTP 200 - OK indicando que o processamento foi iniciado. A aplicação cliente receberá uma resposta com o protocolo desta ação. Ele deve ser guardado e usado posteriormente para consultar o resultado do pedido de criptografia.
 O formato dessa resposta conterá os seguintes dados, em formato JSON:
-
 
 \begin{itemize}
 \item \textbf{requestId} (String) - Identificador gerado para consulta posterior do processamento da decriptação
@@ -242,18 +233,17 @@ O formato dessa resposta conterá os seguintes dados, em formato JSON:
 \item \textbf{time} (Número / Timestamp) - Timestamp do momento do recebimento da requisição pelo aplicativo no dispositivo 
 \end{itemize}
 
-Exemplo:
-%%Exemplo em caso de processamento ainda em andamento:
-%%\begin{center}
-%% \begin{minipage}{0.7\textwidth}
-%%  \begin{codigo}[H]
-%%   \small
-%%   \VerbatimInput[xleftmargin=10mm,numbers=left,obeytabs=true]{./prog/pedido-descriptografar.json}
-%%   \caption{\texttt{Resposta da consulta à pedido de criptografia ainda em andamento} }
-%%   \label{code:resp-consulta-cripto404}
-%%  \end{codigo}
-%% \end{minipage}
-%%\end{center}
+
+\begin{center}
+ \begin{minipage}{0.9\textwidth}
+  \begin{codigo}[H]
+   \small
+   \VerbatimInput[xleftmargin=10mm,numbers=left,obeytabs=true]{./prog/6-descriptografar-pedido-resposta.json}
+   \caption{\texttt{Exemplo de resposta do pedido de descriptografia} }
+   \label{code:exemplo-json-resposta-criptografar}
+  \end{codigo}
+ \end{minipage}
+\end{center}
 
 
 \subsection{Consultar resultado da descriptografia de conteúdo}
@@ -270,11 +260,10 @@ Esta operação somente exige o identificador do do pedido anterior de criptografi
 \end{figure}
 
 
-
 \begin{itemize}
-\item \textbf{Endpoint}: \texttt{/cryptows/decrypt-content/protocol/123e4567-e89b-12d3-a456-426655440000}
+\item \textbf{Endpoint exemplo}: \texttt{/cryptows/decrypt-content/requestId/123e4567-e89b-12d3}
 \item \textbf{Método HTTP}: GET
-\item \textbf{Content-type}: application/json
+\item \textbf{Content-type}:  \texttt{application/json}
 \end{itemize}
 
 A resposta deste serviço em caso de sucesso fará uso do código HTTP 200 - OK indicando que o processamento foi concluído. Caso a aplicação no celular ainda esteja em processamento a requisição, o código HTTP 404 - Not Found é retornado. A aplicação cliente deve tentar novamente em alguns segundos. 
@@ -288,18 +277,27 @@ O formato dessa resposta conterá os seguintes dados, em formato JSON:
 
 
 
-Exemplo em caso de processamento concluído:
-{
-    "plainContent": "Uma mensagem que foi enviada",
-    "code": 200,
-    "statusMessage": ?Requisicão processada com sucesso?
-}
+\begin{center}
+ \begin{minipage}{0.9\textwidth}
+  \begin{codigo}[H]
+   \small
+   \VerbatimInput[xleftmargin=10mm,numbers=left,obeytabs=true]{./prog/7-descriptografar-consulta-ok.json}
+   \caption{\texttt{Exemplo de resposta em caso de processamento concluído} }
+   \label{code:exemplo-json-resposta-criptografar}
+  \end{codigo}
+ \end{minipage}
+\end{center}
 
 
-Exemplo em caso de processamento ainda em andamento:
-{
-    "plainContent": "",
-    "code": 404,
-    "statusMessage": ?O processamento ainda não foi concluído.?
-}
+
+\begin{center}
+ \begin{minipage}{0.9\textwidth}
+  \begin{codigo}[H]
+   \small
+   \VerbatimInput[xleftmargin=10mm,numbers=left,obeytabs=true]{./prog/8-descriptografar-consulta-404.json}
+   \caption{\texttt{Exemplo de resposta em caso de processamento ainda em andamento} }
+   \label{code:exemplo-json-resposta-criptografar}
+  \end{codigo}
+ \end{minipage}
+\end{center}
 

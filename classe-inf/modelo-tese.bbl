@@ -1,0 +1,204 @@
+\begin{thebibliography}{10}
+
+\bibitem{akram2014end}
+{\sffamily\scshape Akram, R.~N.; Ko, R.~K.}
+\newblock {\bfseries End-to-end secure and privacy preserving mobile chat
+  application}.
+\newblock In: {\itshape IFIP International Workshop on Information Security
+  Theory and Practice}, p. 124--139. Springer, 2014.
+
+\bibitem{icpBrasil}
+{\sffamily\scshape Brasil, I.}
+\newblock {\bfseries Instituto nacional de tecnologia da informação}.
+\newblock \url{http://www.iti.gov.br/icp-brasil/estrutura}.
+\newblock Accessado em: 2016-12-03.
+
+\bibitem{modAuthMainPage}
+{\sffamily\scshape Busleiman, A.~B.}
+\newblock {\bfseries Apache {OpenPGP Support}}.
+\newblock \url{http://www.securiteam.com/tools/5HP0220LFU.html}, 2007.
+
+\bibitem{enigformMainPage}
+{\sffamily\scshape Busleiman, A.~B.}
+\newblock {\bfseries Enigform project main page}.
+\newblock \url{http://enigform.mozdev.org/}, 2016.
+
+\bibitem{RFC4880}
+{\sffamily\scshape Callas, J.; Donnerhacke, L.; Finney, H.; Shaw, D.; Thayer,
+  R.}
+\newblock {\bfseries Openpgp message format}.
+\newblock RFC 4880, RFC Editor, November 2007.
+\newblock \url{http://www.rfc-editor.org/rfc/rfc4880.txt}.
+
+\bibitem{carmocriptografia}
+{\sffamily\scshape Carmo, F.~J.; Lemes, P.~A.; Freitas, T.~H.}
+\newblock {\bfseries Criptografia e {PGP}}.
+
+\bibitem{certisignSistemas}
+{\sffamily\scshape Certisign.}
+\newblock {\bfseries Instalação de tokens fabricados pela certisign}.
+\newblock \url{https://www.certisign.com.br/sistemas}.
+\newblock Accessado em: 2016-12-03.
+
+\bibitem{gnupgHome}
+{\sffamily\scshape Comunity, G.}
+\newblock {\bfseries Gnupg home page}.
+\newblock \url{https://www.gnupg.org/}.
+\newblock Accessado em: 2016-10-10.
+
+\bibitem{gnupgJava}
+{\sffamily\scshape Comunity, G.}
+\newblock {\bfseries Gnupg home page}.
+\newblock \url{https://www.gnupg.org/}.
+\newblock Accessado em: 2016-10-10.
+
+\bibitem{gpgMe}
+{\sffamily\scshape Comunity, G.}
+\newblock {\bfseries Gnupg made easy}.
+\newblock \url{https://www.gnupg.org/(es)/related_software/gpgme/index.html}.
+\newblock Accessado em: 2016-12-02.
+
+\bibitem{gnupgSoftwareList}
+{\sffamily\scshape Comunity, G.}
+\newblock {\bfseries Gnupg software list}.
+\newblock \url{https://www.gnupg.org/related_software/swlist.html}.
+\newblock Accessado em: 2016-12-01.
+
+\bibitem{gpgEncryptPHP}
+{\sffamily\scshape Comunity, G.}
+\newblock {\bfseries Manual do php gnupg gnupg\_encrypt}.
+\newblock \url{http://php.net/manual/pt_BR/function.gnupg-encrypt.php}.
+\newblock Accessado em: 2016-12-03.
+
+\bibitem{openKeyChain}
+{\sffamily\scshape Comunity, O.~K.}
+\newblock {\bfseries Open keychain}.
+\newblock \url{https://www.openkeychain.org}.
+
+\bibitem{rubyGPG}
+{\sffamily\scshape Comunity, R.~G.}
+\newblock {\bfseries Ruby gpgme}.
+\newblock \url{http://www.rubydoc.info/gems/gpgme}.
+\newblock Accessado em: 2016-12-03.
+
+\bibitem{diffie1988first}
+{\sffamily\scshape Diffie, W.}
+\newblock {\bfseries The first ten years of public-key cryptography}.
+\newblock {\itshape Proceedings of the IEEE}, 76(5):560--577, 1988.
+
+\bibitem{reqTokenSerasa}
+{\sffamily\scshape Experian, S.}
+\newblock {\bfseries Instalação e requisitos técnicos em tokens da serasa
+  experian}.
+\newblock
+  \url{https://serasa.certificadodigital.com.br/instalacao/requisitos-tecnicos/}.
+\newblock Accessado em: 2016-12-03.
+
+\bibitem{Hacshi}
+{\sffamily\scshape {\href{http://www.sk.tsukuba.ac.jp/~hachi/}{Hachimori}}, M.}
+\newblock {\bfseries Simplicial complex library}.
+\newblock \href{http://www.qci.jst.go.jp/~hachi/math/library/index_eng.html}
+  {www.qci.jst.go.jp/\-\~{}hachi}.
+
+\bibitem{lehtonen2002pattern}
+{\sffamily\scshape Lehtonen, S.; Parssinen, J.}
+\newblock {\bfseries Pattern language for cryptographic key management.}
+\newblock In: {\itshape EuroPLoP}, p. 245--258, 2002.
+
+\bibitem{lucas2006pgp}
+{\sffamily\scshape Lucas, M.}
+\newblock {\bfseries PGP \& GPG: Email for the practical paranoid}.
+\newblock No Starch Press, 2006.
+
+\bibitem{pastPresentFutureCripto}
+{\sffamily\scshape McDonald, N.~G.}
+\newblock {\bfseries Past, present, and future methods of cryptography and data
+  encryption}.
+\newblock {\itshape Department of Electrical and Computer Engineering,
+  University of Utah}, 2009.
+
+\bibitem{naylor2014cost}
+{\sffamily\scshape Naylor, D.; Finamore, A.; Leontiadis, I.; Grunenberger, Y.;
+  Mellia, M.; Munaf{\`o}, M.; Papagiannaki, K.; Steenkiste, P.}
+\newblock {\bfseries The cost of the s in https}.
+\newblock In: {\itshape Proceedings of the 10th ACM International on Conference
+  on emerging Networking Experiments and Technologies}, p. 133--140. ACM, 2014.
+
+\bibitem{openKeyChainAbout}
+{\sffamily\scshape {Open KeyChain About Page}.}
+\newblock {\bfseries About}.
+\newblock \url{https://www.openkeychain.org/about/}, 2016.
+
+\bibitem{pyGnupg}
+{\sffamily\scshape python-gnupg Comunity.}
+\newblock {\bfseries python-gnupg - a python wrapper for gnupg}.
+\newblock \url{https://pythonhosted.org/python-gnupg/}.
+\newblock Accessado em: 2016-12-03.
+
+\bibitem{rushe2013google}
+{\sffamily\scshape Rushe, D.}
+\newblock {\bfseries Google: don{'}t expect privacy when sending to gmail}.
+\newblock {\itshape The Guardian. Retrieved Dec}, 19:2014, 2013.
+
+\bibitem{sheng2006johnny}
+{\sffamily\scshape Sheng, S.; Broderick, L.; Koranda, C.~A.; Hyland, J.~J.}
+\newblock {\bfseries Why johnny still can{'}t encrypt: evaluating the usability
+  of email encryption software}.
+\newblock In: {\itshape Symposium On Usable Privacy and Security}, p. 3--4,
+  2006.
+
+\bibitem{pillarsOfSecutiry}
+{\sffamily\scshape Smith, R.~F.}
+\newblock {\bfseries The 3 pillars of information security}.
+\newblock \url{http://windowsitpro.com/security/3-pillars-information-security
+  }, 2005.
+\newblock Accessado em: 2016-10-10.
+
+\bibitem{sweikata2009usability}
+{\sffamily\scshape Sweikata, M.; Watson, G.; Frank, C.; Christensen, C.; Hu,
+  Y.}
+\newblock {\bfseries The usability of end user cryptographic products}.
+\newblock In: {\itshape 2009 Information Security Curriculum Development
+  Conference}, p. 55--59. ACM, 2009.
+
+\bibitem{symantecWhiteKeepingDataSecure}
+{\sffamily\scshape Symantec.}
+\newblock {\bfseries Whitepaper - keeping your private data secure}.
+\newblock
+  \url{https://www.symantec.com/content/dam/symantec/docs/white-papers/keeping-your-private-data-secure-en.pdf},
+  2015.
+\newblock Accessado em: 2016-10-10.
+
+\bibitem{postman}
+{\sffamily\scshape Team, P.}
+\newblock {\bfseries Postman}.
+\newblock \url{https://www.getpostman.com}.
+\newblock Accessado em: 2016-12-03.
+
+\bibitem{whatsappCriptoSera}
+{\sffamily\scshape {The Guardiam}.}
+\newblock {\bfseries Whatsapp adds end-to-end encryption using textsecure}.
+\newblock
+  \url{https://www.theguardian.com/technology/2014/nov/19/whatsapp-messaging-encryption-android-ios},
+  2014.
+
+\bibitem{whatsappEncryption}
+{\sffamily\scshape Whatsapp.}
+\newblock {\bfseries Whatsapp encryption overview}.
+\newblock
+  \url{https://www.whatsapp.com/security/WhatsApp-Security-Whitepaper.pdf}.
+
+\bibitem{creatorOfPGPSilentCircle}
+{\sffamily\scshape Zimmermann, P.~R.}
+\newblock {\bfseries Creator of pgp and co-founder of silent circle}.
+\newblock \url{http://philzimmermann.com/EN/background/index.html}.
+\newblock Accessado em: 2016-10-10.
+
+\bibitem{zimmCaseDropped}
+{\sffamily\scshape Zimmermann, P.~R.}
+\newblock {\bfseries Significant moments in pgp's history: Zimmermann case
+  dropped}.
+\newblock \url{http://philzimmermann.com/EN/news/PRZ_case_dropped.html}, 1996.
+\newblock Accessado em: 2016-10-10.
+
+\end{thebibliography}

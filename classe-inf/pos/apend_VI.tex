@@ -1,0 +1,28 @@
+\chapter{Exemplo de cliente que consome os serviços criptográficos}
+\label{apend:1}
+
+Para demonstrar um caso de uso por uma aplicação cliente mínima, foi construído um software com uma única tela. Essa aplicação é capaz de fazer uso dos recursos de criptografia oferecidos a partir do dispositivo móvel.
+
+A tela dessa aplicação permite realizar uma operação de encriptação e desencriptação, exibindo os campos em acordo. 
+A seguir uma imagem da tela implementada. Note que que ela contém a configuração de IP, porta e senha de acesso. Neste exemplo uma operação de criptografia e a sua respectiva consulta foram realizadas e o resultado exposto na tela.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.7\textwidth]{./fig/cliente-pgp.png}
+ \caption{Captura de tela de aplicação experimental desenvolvida para fazer uso dos serviços criptográficos contidos no dispositivo móvel. }
+ \label{fig:exemploFig2}
+\end{figure}
+
+A aplicação executa um pedido de operação, seja  de criptografia, seja de descriptografia e consulta repetidamente o celular. Quando o identificador do pedido (requestId) usado tem uma resposta associada, a mensagem PGP é retornada para a tela, como visto na imagem anterior. Para a demonstração apenas é exibido o texto cifrado em tela.
+
+O desenvolvimento da aplicação cliente foi feito com as bibliotecas listadas a seguir:
+
+\begin{itemize}
+\item HTML 5 : Linguagem de marcação para construção da tela
+\item CSS 3 : Estilização da tela
+\item Javacript ES2015 : Linguagem de programação da tela
+\item Electron 1.4.1 : Biblioteca para NodeJs que permite construir aplicações desktop  usando HTML e Javascript com privilégios de aplicação desktop convencional.
+\item NodeJs 1.6.9 : Runtime Javascript
+\item jQuery 3.1.1 : Biblioteca usada para as chamadas HTTP, como uma camada facilitadora para chamadas XMLHttpRequest
+\item VueJS 2.1.4 : Biblioteca para gestão da camada de visão
+\end{itemize}

@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: modelo-tese.aux
+The style file: inf-ufg.bst
+Database file #1: ./bib/modelo-tese.bib
+Warning--empty journal in carmocriptografia
+Warning--empty year in carmocriptografia
+You've used 33 entries,
+            2158 wiz_defined-function locations,
+            692 strings with 8679 characters,
+and the built_in function-call counts, 8973 in all, are:
+= -- 796
+> -- 348
+< -- 6
++ -- 147
+- -- 110
+* -- 514
+:= -- 1452
+add.period$ -- 117
+call.type$ -- 33
+change.case$ -- 153
+chr.to.int$ -- 0
+cite$ -- 35
+duplicate$ -- 391
+empty$ -- 867
+format.name$ -- 110
+if$ -- 1911
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 11
+newline$ -- 183
+num.names$ -- 66
+pop$ -- 247
+preamble$ -- 1
+purify$ -- 121
+quote$ -- 0
+skip$ -- 224
+stack$ -- 0
+substring$ -- 342
+swap$ -- 141
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 130
+warning$ -- 2
+while$ -- 84
+width$ -- 35
+write$ -- 357
+(There were 2 warnings)
