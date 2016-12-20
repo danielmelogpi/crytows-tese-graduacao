@@ -1,4 +1,4 @@
-\chapter{Proposta de chaveiro pessoal móvel acessível por Webservices}
+\chapter{Proposta de chaveiro pessoal móvel acessível por Web Services}
 \label{cap:propostaChaveiroWS}
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -6,7 +6,7 @@
 \label{sec:descricaoProposta} 
 Neste trabalho propõe-se uma solução para as dificuldades com configuração de ambiente e mobilidade do chaveiro, dando ao usuário a capacidade de manter consigo o chaveiro PGP com seus recursos privados de criptografia e, ainda assim, ser capaz de utilizar tais recursos nas aplicações com as quais interage cotidianamente em suas estações de trabalho.
 
-O capítulo 4 apresentamos formas de acesso ao chaveiro estão concentradas em bibliotecas e outros softwares na estação de trabalho.. Buscamos neste trabalho oferecer uma interface única de acesso ao chaveiro por meio de webservices seguindo a filosofia REST. É esperado que isso simplifique a manutenção do chaveiro pelo usuário final. Também espera-se  contribuir com o desenvolvimento de aplicações que usam os recursos do chaveiro, de forma que possam usar os webservices de forma centralizada e ubíqua e seja desnecessário ter a instalação em várias estações de trabalho espalhadas. cada estação de trabalho.
+O capítulo \nameref{cap:analiFormasAcesso} apresentamos formas de acesso ao chaveiro estão concentradas em bibliotecas e outros softwares na estação de trabalho. Buscamos neste trabalho oferecer uma interface única de acesso ao chaveiro por meio de web services seguindo a filosofia REST. É esperado que isso simplifique a manutenção do chaveiro pelo usuário final. Também espera-se  contribuir com o desenvolvimento de aplicações que usam os recursos do chaveiro, de forma que possam usar os web services de forma centralizada e ubíqua e seja desnecessário ter a instalação em várias estações de trabalho espalhadas. cada estação de trabalho.
 
 Para que aplicações de terceiros consigam realizar as operações necessárias, como criptografar, assinar, descriptografar e verificar assinatura, é necessário um canal de comunicação para que as aplicações localizadas nas estações de trabalho possam acessar o chaveiro e fazer uso dos recursos criptográficos agora protegidos enclausurados no dispositivo móvel. Para este fim, é proposta neste trabalho uma camada de serviço implementando estas operações como  web services.
 
@@ -45,10 +45,10 @@ Quando necessário, será pedida na tela do usuário a senha de sua chave privada p
  \label{fig:exemploFig2}
 \end{figure}
 
-\section{Operações dos Webservices}
-\label{sec:operacoesWebservices} 
+\section{Operações dos Web Services}
+\label{sec:operacoesWeb Services} 
 
-Os webservices respondem através de um servidor web em execução no dispositivo móvel. Aplicações clientes capazes de enviar mensagens no formato especificado à frente poderão usufruir dos recursos do chaveiro no celular.
+Os web services respondem através de um servidor web em execução no dispositivo móvel. Aplicações clientes capazes de enviar mensagens no formato especificado à frente poderão usufruir dos recursos do chaveiro no celular.
 
 A forma de implementação desta demonstração adota um modelo assíncrono para as operações de criptografia e descriptografia. Essa forma foi escolhida pois os aplicativos móveis são geralmente desenvolvidos explorando-se recursos assíncronos e o webservice precisa tratar os casos em que o usuário deve interagir com a tela sem bloquear as chamadas ao serviço de forma indefinida. Dessa forma, contamos na demonstração deste trabalho com quatro operações básicas, sendo duas delas de pedido e duas de consulta de resultados destes. As operações são as seguintes:
 \begin{itemize}
@@ -64,7 +64,7 @@ Seguem nas próximas subseções o detalhamento destes serviços.
 \subsection{Autorização para utilizar os serviços}
 \label{sec:autoriServicos}
 Para que uma aplicação cliente utilize os serviços ela deve usar uma chave de segurança gerada no aplicativo móvel.
-Todas as requisições devem contar com o cabeçalho Authorization preenchido com uma chave aleatória, exposta no dispositivo do usuário. A aplicação cliente deve ser atualizada com a chave atual, do contrário as suas requisições serão negadas pelo serviço. com o código HTTP 403 - Unauthorized e uma mensagem indicando que a chave está vazia ou incorreta.
+Todas as requisições devem contar com o cabeçalho Authorization preenchido com uma chave aleatória, exposta no dispositivo do usuário. A aplicação cliente deve ser atualizada com a chave atual, do contrário as suas requisições serão negadas pelo serviço. com o código \verb|HTTP 403 - Unauthorized| e uma mensagem indicando que a chave está vazia ou incorreta.
 
 \subsection{Criptografar um novo conteúdo}
 \label{sec:servicoCriptografa}
@@ -107,7 +107,7 @@ Para criptografar um novo conteúdo deve ser enviado um objeto JSON com os seguin
 \end{center}
 
 
-A resposta deste serviço em caso de sucesso fará uso do código HTTP 200 - OK indicando que o processamento foi iniciado. A aplicação cliente receberá uma resposta com o identificador desta ação. Ele deve ser guardado e usado posteriormente para consultar o resultado do pedido de criptografia.
+A resposta deste serviço em caso de sucesso fará uso do código \verb|HTTP 200 - OK| indicando que o processamento foi iniciado. A aplicação cliente receberá uma resposta com o identificador desta ação. Ele deve ser guardado e usado posteriormente para consultar o resultado do pedido de criptografia.
 O formato dessa resposta conterá os seguintes dados, em formato JSON:
 
 
@@ -150,7 +150,7 @@ Esta operação somente exige o identificador do do pedido anterior de criptografi
 \end{itemize}
 
 
-A resposta deste serviço em caso de sucesso fará uso do código HTTP 200 - OK indicando que o processamento foi concluído. Caso a aplicação no celular ainda esteja processando a requisição, o código HTTP 404 - Not Found é retornado. A aplicação cliente deve tentar novamente em alguns segundos. Em caso de retorno com sucesso a mensagem criptografada será descartada pelo serviço para poupar recursos do dispositivo móvel.
+A resposta deste serviço em caso de sucesso fará uso do código \verb|HTTP 200 - OK| indicando que o processamento foi concluído. Caso a aplicação no celular ainda esteja processando a requisição, o código \verb|HTTP 404 - Not Found| é retornado. A aplicação cliente deve tentar novamente em alguns segundos. Em caso de retorno com sucesso a mensagem criptografada será descartada pelo serviço para poupar recursos do dispositivo móvel.
 O formato dessa resposta conterá os seguintes dados, em formato JSON:
 
 \begin{itemize}
@@ -224,7 +224,7 @@ Para descriptografar um novo conteúdo deve ser enviado um objeto JSON com os seg
 \end{center}
 
 
-A resposta deste serviço em caso de sucesso fará uso do código HTTP 200 - OK indicando que o processamento foi iniciado. A aplicação cliente receberá uma resposta com o protocolo desta ação. Ele deve ser guardado e usado posteriormente para consultar o resultado do pedido de criptografia.
+A resposta deste serviço em caso de sucesso fará uso do código \verb|HTTP 200 - OK| indicando que o processamento foi iniciado. A aplicação cliente receberá uma resposta com o protocolo desta ação. Ele deve ser guardado e usado posteriormente para consultar o resultado do pedido de criptografia.
 O formato dessa resposta conterá os seguintes dados, em formato JSON:
 
 \begin{itemize}
@@ -266,7 +266,7 @@ Esta operação somente exige o identificador do do pedido anterior de criptografi
 \item \textbf{Content-type}:  \texttt{application/json}
 \end{itemize}
 
-A resposta deste serviço em caso de sucesso fará uso do código HTTP 200 - OK indicando que o processamento foi concluído. Caso a aplicação no celular ainda esteja em processamento a requisição, o código HTTP 404 - Not Found é retornado. A aplicação cliente deve tentar novamente em alguns segundos. 
+A resposta deste serviço em caso de sucesso fará uso do código \verb|HTTP 200 - OK| indicando que o processamento foi concluído. Caso a aplicação no celular ainda esteja em processamento a requisição, o código \verb|HTTP 404 - Not Found| é retornado. A aplicação cliente deve tentar novamente em alguns segundos. 
 O formato dessa resposta conterá os seguintes dados, em formato JSON:
 
 \begin{itemize}

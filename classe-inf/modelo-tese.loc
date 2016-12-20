@@ -1,8 +1,8 @@
-\contentsline {codigo}{\numberline {5.1}{\ignorespaces \texttt {Mensagem do pedido de criptografia} \relax }}{29}{codigo.23}
-\contentsline {codigo}{\numberline {5.2}{\ignorespaces \texttt {Resposta do pedido de criptografia} \relax }}{29}{codigo.24}
-\contentsline {codigo}{\numberline {5.3}{\ignorespaces \texttt {Resposta do pedido de criptografia em caso de processamento conclu\IeC {\'\i }do} \relax }}{30}{codigo.27}
-\contentsline {codigo}{\numberline {5.4}{\ignorespaces \texttt {Resposta da consulta \`a pedido de criptografia ainda em andamento} \relax }}{31}{codigo.28}
-\contentsline {codigo}{\numberline {5.5}{\ignorespaces \texttt {Mensagem enviada para descriptografar uma mensagem OpenPGP} \relax }}{32}{codigo.31}
-\contentsline {codigo}{\numberline {5.6}{\ignorespaces \texttt {Exemplo de resposta do pedido de descriptografia} \relax }}{32}{codigo.32}
-\contentsline {codigo}{\numberline {5.7}{\ignorespaces \texttt {Exemplo de resposta em caso de processamento conclu\IeC {\'\i }do} \relax }}{33}{codigo.35}
-\contentsline {codigo}{\numberline {5.8}{\ignorespaces \texttt {Exemplo de resposta em caso de processamento ainda em andamento} \relax }}{34}{codigo.36}
+\contentsline {codigo}{\numberline {5.1}{\ignorespaces \texttt {Mensagem do pedido de criptografia} \relax }}{30}{codigo.23}
+\contentsline {codigo}{\numberline {5.2}{\ignorespaces \texttt {Resposta do pedido de criptografia} \relax }}{30}{codigo.24}
+\contentsline {codigo}{\numberline {5.3}{\ignorespaces \texttt {Resposta do pedido de criptografia em caso de processamento conclu\IeC {\'\i }do} \relax }}{31}{codigo.27}
+\contentsline {codigo}{\numberline {5.4}{\ignorespaces \texttt {Resposta da consulta \`a pedido de criptografia ainda em andamento} \relax }}{32}{codigo.28}
+\contentsline {codigo}{\numberline {5.5}{\ignorespaces \texttt {Mensagem enviada para descriptografar uma mensagem OpenPGP} \relax }}{33}{codigo.31}
+\contentsline {codigo}{\numberline {5.6}{\ignorespaces \texttt {Exemplo de resposta do pedido de descriptografia} \relax }}{33}{codigo.32}
+\contentsline {codigo}{\numberline {5.7}{\ignorespaces \texttt {Exemplo de resposta em caso de processamento conclu\IeC {\'\i }do} \relax }}{34}{codigo.35}
+\contentsline {codigo}{\numberline {5.8}{\ignorespaces \texttt {Exemplo de resposta em caso de processamento ainda em andamento} \relax }}{35}{codigo.36}

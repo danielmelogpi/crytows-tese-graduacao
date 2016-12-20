@@ -1,4 +1,5 @@
 % Exemplo de dissertação do INF-UFG com texto em portugues formatado com LaTeX
+
 \documentclass[relatorio]{inf-ufg}
 % Opções da classe inf-ufg (ao usar mais de uma, separe por vírgulas)
 %   [tese]         -> Tese de doutorado.
@@ -10,14 +11,17 @@
 %                     Use esta opção para gerar o arquivo para impressão
 %                     da versão final do seu texto!!!
 
+
+\usepackage{placeins}
+
 %----------------------------------------------------- INICIO DO DOCUMENTO %
 \begin{document}
 
 %------------------------------------------ AUTOR, TÍTULO E DATA DE DEFESA %
-\autor{ Daniel Melo} % (José da Silva)
-\autorR{ Melo, Daniel} % (da Silva, José)
+\autor{Daniel Melo} % (José da Silva)
+\autorR{Melo, Daniel} % (da Silva, José)
 
-\titulo{ {Uso de Webservices Criptográficos a partir de Dispositivos Móveis}}
+\titulo{{Uso de Web Services Criptográficos a partir de Dispositivos Móveis}}
 \subtitulo{ Estudo de viabilidade }
 
 \cidade{Goiânia} % Nome da cidade em foi desenvolvido o trabalho
@@ -49,7 +53,7 @@
 %\unidadeco{\textless Nome da Unidade Acadêmica do Co-orientador\textgreater}
 
 %\programa{\textless Nome do Programa de Pós-Graduação\textgreater} % Computação
-%\concentracao{\textless Área de Concentração\textgreater}
+\concentracao{Segurança / Criptografia}
 
 %-------------------------------------------------- ELEMENTOS PRÉ-TEXTUAIS %
 \capa    % Gera o modelo da capa externa do trabalho
@@ -64,7 +68,7 @@
 \input{./pre/pre_resumo}
 \input{./pre/pre_abstract}
 
-\tabelas[figcod]
+\tabelas[figtabcod]
 %Opções:
 %nada [] -> Gera apenas o sumário
 %fig     -> Gera o sumário e a lista de figuras

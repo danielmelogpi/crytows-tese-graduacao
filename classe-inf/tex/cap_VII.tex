@@ -5,4 +5,6 @@ Um possível ponto de trabalhos futuros está no estudo do uso prático desta técni
 
 A implementação atual não provê proteção contra ataques de negação de serviço. A solução deste problema para serviços contidos em dispositivos móveis também é de interesse para trabalhos futuros.
 
-Também são pontos interessantes de evolução a implementação destes serviços com proteção HTTPS, além de tratamentos para casos em que o usuário perde o dispositivo sem ter criado antes um certificado de revogação para suas chaves privadas.
+Também são pontos interessantes de evolução a implementação destes serviços com proteção HTTPS, além de tratamentos para casos em que o usuário perde o dispositivo sem ter criado antes um certificado de revogação para suas chaves privadas. Outro ponto interessante é a prevenção de ataques do tipo man-in-the-middle, onde um atacante captura e retransmite informação de forma transparente entre os pares. 
+
+Um último ponto para investigação seria a modificação da comunicação com diferentes estratégias de trocas de chave entre o cliente e o web service criptográfico. Por exemplo, poderia ser feita a troca de uma chave de sessão entre eles, de forma segura através das chaves assimétricas como explorado e, a partir daí, trocar mensagens com criptografia simétrica, baseada na chave de sessão. Espera-se que um significativo ganho de performance seja obtido, visto que a criptografia simétrica deverá ser menos onerosa para o processamento do dispositivo.

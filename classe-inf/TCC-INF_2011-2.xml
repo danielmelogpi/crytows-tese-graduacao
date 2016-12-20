@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<documento>
+	<titulo>Uso de Web Services Criptográficos a partir de Dispositivos Móveis</titulo>
+	<autores>
+		<autor>Daniel Melo</autor>
+		<autor>Marcelo Akira Inuzuka</autor>
+	</autores>
+	<palavras-chaves>
+		<palavra-chave>Criptografia</palavra-chave>
+		<palavra-chave>PGP</palavra-chave>
+		<palavra-chave>Webservices</palavra-chave>
+		<palavra-chave>Dispositivo Móvel</palavra-chave>
+	</palavras-chaves>
+	<resumo>  Apesar de a criptografia ser conhecida há muitos anos o desenvolvimento das ferramentas e técnicas não tem sido suficiente para assegurar a sua adoção por grandes grupos de usuários. Neste trabalho propomos o uso de web services capazes de oferecer recursos de criptografia a partir de dispositivos móveis, oferecendo uma alternativa para que o usuário final possa realizar o transporte e a gestão de seus recursos de segurança com mais simplicidade. Essa abordagem também busca facilitar a integração à outras ferramentas que desejem usar tais recursos. Essas capacidades são desenvolvidas mantendo o controle dos recursos criptográficos com o usuário final.
+	</resumo>
+	<contribuicoes>
+		Segurança da informação
+	</contribuicoes>
+	<data>
+		<dia>12</dia>
+		<mes>12</mes>
+		<ano>2016</ano>
+	</data>
+	<tipo>Trabalho de Conclusão de Curso</tipo>
+	<formato>PDF</formato>
+	<identificador>TCC-INF_2016-2</identificador>
+	<url>TCC-INF_2016-2.pdf</url>
+	<idioma>Português</idioma>
+	<direitos>Este trabalho pode ser usado irrestritamente, desde que sejam dados os devidos créditos aos seus autores.</direitos>
+</documento>

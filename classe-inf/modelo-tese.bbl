@@ -30,15 +30,16 @@
 \newblock RFC 4880, RFC Editor, November 2007.
 \newblock \url{http://www.rfc-editor.org/rfc/rfc4880.txt}.
 
-\bibitem{carmocriptografia}
-{\sffamily\scshape Carmo, F.~J.; Lemes, P.~A.; Freitas, T.~H.}
-\newblock {\bfseries Criptografia e {PGP}}.
-
 \bibitem{certisignSistemas}
 {\sffamily\scshape Certisign.}
 \newblock {\bfseries Instalação de tokens fabricados pela certisign}.
 \newblock \url{https://www.certisign.com.br/sistemas}.
 \newblock Accessado em: 2016-12-03.
+
+\bibitem{enigmail}
+{\sffamily\scshape Comunity, E.}
+\newblock {\bfseries Enigmail home page}.
+\newblock \url{https://www.enigmail.net/index.php/en/}.
 
 \bibitem{gnupgHome}
 {\sffamily\scshape Comunity, G.}
@@ -94,12 +95,6 @@
   \url{https://serasa.certificadodigital.com.br/instalacao/requisitos-tecnicos/}.
 \newblock Accessado em: 2016-12-03.
 
-\bibitem{Hacshi}
-{\sffamily\scshape {\href{http://www.sk.tsukuba.ac.jp/~hachi/}{Hachimori}}, M.}
-\newblock {\bfseries Simplicial complex library}.
-\newblock \href{http://www.qci.jst.go.jp/~hachi/math/library/index_eng.html}
-  {www.qci.jst.go.jp/\-\~{}hachi}.
-
 \bibitem{lehtonen2002pattern}
 {\sffamily\scshape Lehtonen, S.; Parssinen, J.}
 \newblock {\bfseries Pattern language for cryptographic key management.}
@@ -147,13 +142,6 @@
 \newblock In: {\itshape Symposium On Usable Privacy and Security}, p. 3--4,
   2006.
 
-\bibitem{pillarsOfSecutiry}
-{\sffamily\scshape Smith, R.~F.}
-\newblock {\bfseries The 3 pillars of information security}.
-\newblock \url{http://windowsitpro.com/security/3-pillars-information-security
-  }, 2005.
-\newblock Accessado em: 2016-10-10.
-
 \bibitem{sweikata2009usability}
 {\sffamily\scshape Sweikata, M.; Watson, G.; Frank, C.; Christensen, C.; Hu,
   Y.}
@@ -161,26 +149,11 @@
 \newblock In: {\itshape 2009 Information Security Curriculum Development
   Conference}, p. 55--59. ACM, 2009.
 
-\bibitem{symantecWhiteKeepingDataSecure}
-{\sffamily\scshape Symantec.}
-\newblock {\bfseries Whitepaper - keeping your private data secure}.
-\newblock
-  \url{https://www.symantec.com/content/dam/symantec/docs/white-papers/keeping-your-private-data-secure-en.pdf},
-  2015.
-\newblock Accessado em: 2016-10-10.
-
 \bibitem{postman}
 {\sffamily\scshape Team, P.}
 \newblock {\bfseries Postman}.
 \newblock \url{https://www.getpostman.com}.
 \newblock Accessado em: 2016-12-03.
-
-\bibitem{whatsappCriptoSera}
-{\sffamily\scshape {The Guardiam}.}
-\newblock {\bfseries Whatsapp adds end-to-end encryption using textsecure}.
-\newblock
-  \url{https://www.theguardian.com/technology/2014/nov/19/whatsapp-messaging-encryption-android-ios},
-  2014.
 
 \bibitem{whatsappEncryption}
 {\sffamily\scshape Whatsapp.}

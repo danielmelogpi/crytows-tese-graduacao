@@ -3,47 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: modelo-tese.aux
 The style file: inf-ufg.bst
 Database file #1: ./bib/modelo-tese.bib
-Warning--empty journal in carmocriptografia
-Warning--empty year in carmocriptografia
-You've used 33 entries,
+You've used 29 entries,
             2158 wiz_defined-function locations,
-            692 strings with 8679 characters,
-and the built_in function-call counts, 8973 in all, are:
-= -- 796
-> -- 348
+            670 strings with 7876 characters,
+and the built_in function-call counts, 8039 in all, are:
+= -- 718
+> -- 309
 < -- 6
-+ -- 147
-- -- 110
-* -- 514
-:= -- 1452
-add.period$ -- 117
-call.type$ -- 33
-change.case$ -- 153
++ -- 130
+- -- 98
+* -- 460
+:= -- 1295
+add.period$ -- 104
+call.type$ -- 29
+change.case$ -- 135
 chr.to.int$ -- 0
-cite$ -- 35
-duplicate$ -- 391
-empty$ -- 867
-format.name$ -- 110
-if$ -- 1911
+cite$ -- 29
+duplicate$ -- 352
+empty$ -- 776
+format.name$ -- 98
+if$ -- 1719
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 11
-newline$ -- 183
-num.names$ -- 66
-pop$ -- 247
+int.to.str$ -- 29
+missing$ -- 10
+newline$ -- 162
+num.names$ -- 58
+pop$ -- 217
 preamble$ -- 1
-purify$ -- 121
+purify$ -- 107
 quote$ -- 0
-skip$ -- 224
+skip$ -- 203
 stack$ -- 0
-substring$ -- 342
-swap$ -- 141
+substring$ -- 321
+swap$ -- 130
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 130
-warning$ -- 2
-while$ -- 84
-width$ -- 35
-write$ -- 357
-(There were 2 warnings)
+type$ -- 114
+warning$ -- 0
+while$ -- 76
+width$ -- 31
+write$ -- 316

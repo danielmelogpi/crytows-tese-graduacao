@@ -36,7 +36,7 @@ Para a implementação desta aplicação foram utilizados vários itens de configuraç
 \begin{figure}[H]
  \centering
  \includegraphics[width=0.98\textwidth]{./fig/camadas.png}
- \caption{Ilustração em alto nível das camadas envolvidas na implementação dos webservices em dispositivo móvel}
+ \caption{Ilustração em alto nível das camadas envolvidas na implementação dos web services em dispositivo móvel}
  \label{fig:exemploFig2}
 \end{figure}
 
@@ -50,9 +50,6 @@ A arquitetura adotada pode ser representada pelo seguinte diagrama, as principai
  \label{fig:exemploFig2}
 \end{figure}
 
-
-
-Legenda: 
 
 São destacados nesta implementação:
 \begin{itemize}
@@ -68,8 +65,7 @@ São destacados nesta implementação:
 \section{Demonstração do consumo dos serviços}
 \label{sec:experimentoDemoConsumo}
 
-
-Abaixo seguem algumas capturas de tela da ferramenta Postman em sua versão 4.9.0 \cite{postman}, demonstrando como o consumo dos webservices pode ser feito. Note-se que esta ferramenta somente faz consultas à APIs e mostra o resultado das suas chamadas. Esta demonstração busca expor a versatilidade dos webservices desenvolvidos, uma vez que qualquer aplicação capaz de chamadas REST poderia fazer uso desses recursos.
+Abaixo seguem algumas capturas de tela da ferramenta Postman em sua versão 4.9.0 \cite{postman}, demonstrando como o consumo dos web services pode ser feito. Note-se que esta ferramenta somente faz consultas à APIs e mostra o resultado das suas chamadas. Esta demonstração busca expor a versatilidade dos web services desenvolvidos, uma vez que qualquer aplicação capaz de chamadas REST poderia fazer uso desses recursos.
 
 \begin{figure}[H]
  \centering
@@ -94,7 +90,6 @@ Abaixo seguem algumas capturas de tela da ferramenta Postman em sua versão 4.9.0
  \label{fig:exemploFig2}
 \end{figure}
 
-
 \begin{figure}[H]
  \centering
  \includegraphics[width=0.9\textwidth]{./fig/postman-decrypt-result.png}
@@ -106,16 +101,69 @@ Abaixo seguem algumas capturas de tela da ferramenta Postman em sua versão 4.9.0
 \section{Análise de desempenho da solução}
 \label{sec:experimentoDesempenho}
 
+A solução foi testada quando à sua capacidade de produzir uma resposta para um pedido de criptografia, variando o tamanho das mensagens testadas e capturando o tempo total entre o pedido na API REST e o momento em que a aplicação salva em memória o resultado da operação.
 
+Algumas notas com parâmetros do experimento e das métricas
+\begin{itemize}
+\item A medida não leva em conta o tempo que o usuário leva para inserir a senha. Antes do primeiro teste foi configurado para que a senha ficasse memorizada por algumas horas, o que permite que o Open KeyChain processe imediatamente os pedidos que recebe.
+\item O tempo não considera o tráfero da requisição HTTP
+\item As unidades adotadas em todas as métricas apresentadas à frente são : milisegundos (ms) para tempo e byte(b) para tamanho dos conteúdos.
+\item Dez experimentos foram realizados para cada comprimento de mensagem.
+\item A média calculada é sempre aritmética
+\item A mensagem testada foi incrementada, a cada série de testes, em 51200 bytes (ou 512*100), buscando o melhor uso dos blocos do algoritmo de criptografia. O primeiro teste foi feito com mensagens de 51200 bytes, incrementando em parcelas deste tamanho até 512000 (512*1000) bytes, totalizando 10 séries de testes.
+\end{itemize}
+
+\FloatBarrier
+
+\begin{table}[]
+\centering
+\caption{Médias de tempo de processamento de conteúdo e sua relação com o tamanho do mesmo}
+\label{my-label}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Tamanho (bytes)} & \textbf{Tempo (milisegundos)} & \textbf{Tempo / tamanho (ms/byte)}  \\ \hline
+51200 & 275 & 0,00537109 \\ \hline
+102400 & 281,7 & 0,00275098 \\ \hline
+153600 & 295,1 & 0,00192122 \\ \hline
+204800 & 318,9 & 0,00155713 \\ \hline
+256000 & 324,2 & 0,00126641 \\ \hline
+307200 & 348,2 & 0,00113346 \\ \hline
+358400 & 361,3 & 0,00100809 \\ \hline
+409600 & 373,6 & 0,00091211 \\ \hline
+460800 & 393,1 & 0,00085308 \\ \hline
+512000 & 424,1 & 0,00082832 \\ \hline
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+É interessante notar nos dados acima que o tempo total de processamento foi pouco impactado pelo expressivo aumento do conteúdo sendo encriptado. Observe-se que uma mensagem 51200 bytes foi processada em 275 ms e que uma mensagem de 512000 bytes levou, em média, 424,1 ms. Note-se que aumentar a mensagem em dez vezes não chegou a dobrar o tempo de processamento.
+
+Os gráficos abaixo demonstram as relações entre o tamanho da mensagem e o tempo médio de processamento e o quociente entre esse tempo médio e o tamanho da mensagem. Verifique, no segundo caso, como vai se tornando vantajoso computacionalmente a medida que o conteúdo aumenta, exemplificando a eficiência das operações matemáticas adotadas. O tempo de processamento cresce mas, em contra-partida, cada milisegundo é correlacionado com mais caracteres processados. A descoberta deste fato foi contra o conceito intuitivo de que, por o celular se tratar de um ambiente menor e com menos poder de processamento, haveria um ônus de tempo importante para cada caracter a mais na mensagem. Esse ônus é inferior à expectiva do inicio do experimento.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/grafico-relacao-tamanho-tempo-medio.png}
+ \caption{Relação entre o tamanho da mensagem  (bytes) e o tempo médio de processamento (milisegundos)}
+ \label{fig:exemploFig2}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./fig/grafico-quociente-tempoTamanho-x-tamanho.png}
+ \caption{Relação entre o quociente tempo/tamanho (milisegundo/byte) e o tamanho da mensagem (bytes). }
+ \label{fig:exemploFig2}
+\end{figure}
+
+Os dados não computados que deram origem à estas análise e gráficos está disponível para avaliação no Apêndice \ref{apend:7}.
 
 \section{Análise de vulnerabilidades da solução}
 \label{sec:analiseVunerab}
-A solução se propõe a funcionar em redes potencialmente expostas, como redes domésticas ou mesmo corporativas. Nesses cenários se mostra imperativo o uso de HTTPS na comunicação, para evitar ataques de interceptação das mensagens quando ainda trafegam em forma não protegida. Na falta de implementações que usem HTTPS um roteador comprometido, por exemplo, poderia capturar o conteúdo plano das mensagens, tornando todo o esforço em vão. Poderia ser capturada, por exemplo, a senha de acesso daquela sessão, criando uma condição de acesso indevido, mas impossível de identificar pela aplicação. A versão da implementação explorada no experimento não conta com HTTPS, mas a biblioteca utilizada, o NanoHttpd, possui suporte para introdução de certificados nas requisições, tornando-a segura.
+A solução se propõe a funcionar em redes potencialmente expostas, como redes domésticas ou mesmo corporativas. Nesses cenários se mostra imperativo o uso de HTTPS na comunicação, para evitar ataques de interceptação das mensagens quando ainda trafegam em forma não protegida. Na falta de implementações que usem HTTPS um roteador comprometido, por exemplo, poderia capturar o conteúdo plano das mensagens, tornando todo o esforço em vão. Poderia ser capturada, por exemplo, a senha de acesso daquela sessão, criando uma condição de acesso indevido, mas impossível de identificar pela aplicação. A versão da implementação explorada no experimento não conta com HTTPS, mas a biblioteca utilizada, o NanoHttpd, possui suporte para introdução de certificados nas requisições, tornando-a segura. É intessante explorar em obras futuras como lidar com ataques do tipo man-in-the-middle.
 
-É possível, por exemplo, que aplicações que implementam webservices como especificado em seções anteriores gerem certificados próprios, diferentes em cada dispositivo de instalação. A conexão SSL então poderia ser estabelecida, desde que a aplicação cliente confiasse no certificado utilizado pelo serviço no dispositivo. A forma de manter este certificado seguro em caso de comprometimento do dispositivo é, em si, um desafio importante.
+É possível, por exemplo, que aplicações que implementam web services como especificado em seções anteriores gerem certificados próprios, diferentes em cada dispositivo de instalação. A conexão SSL então poderia ser estabelecida, desde que a aplicação cliente confiasse no certificado utilizado pelo serviço no dispositivo. A forma de manter este certificado seguro em caso de comprometimento do dispositivo é, em si, um desafio importante.
 
 Outro ponto importante é a própria capacidade do usuário em comprometer o chaveiro memorizando as senhas. O Open KeyChain memoriza senhas informadas recentemente. Isso traz praticidade, pois múltiplos pedidos por criptografia seriam atendidos sem incomodar novamente o usuário, mas poderia gerar riscos do serviço. A implementação também não tem como forçar atualmente que o usuário use senhas fortes nos seus chaveiros ou que as compartilhe, o que pode comprometer a segurança desta solução se alguém tiver acesso indevido ao dispositivo.
 
-É preciso também observar que a implementação de proteção contra ataques de negação de serviço (DoS) seria necessária em uma solução final. Como este trabalho preocupa-se em demonstrar a viabilidade da implementação a solução para esse problema não foi buscada.
+É preciso também observar que a implementação de proteção contra ataques de negação de serviço seria necessária em uma solução final. Como este trabalho preocupa-se em demonstrar a viabilidade da implementação a solução para esse problema não foi buscada.
 
 Um último ponto é a forma mais simples de comprometimento vislumbrada: que o usuário perca o dispositivo e alguém o use para se passar por ele. Nesse ponto é importante notar que o Open KeyChain já oferece a capacidade de exportar as chaves privadas e, com elas, é possível gerar certificados de revogação, que informam à rede de confiança de chaves que aquela chave não é mais confiável. Essa ação, entretanto, não é tão simples e, por não ser obrigatória, pode ser esquecida por um usuário.
